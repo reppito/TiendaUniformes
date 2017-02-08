@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace TiendaUniformes\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
