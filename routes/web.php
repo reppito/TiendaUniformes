@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'principal@index');
+Route::get('CreateUser', 'UsuarioController@create');

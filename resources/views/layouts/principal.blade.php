@@ -62,6 +62,7 @@
 <!--short codes start here-->
 
    @yield('content')
+	 <div class="clearfix"> </div>
 <!--get in touch start here-->
 <div class="touch-wthree" id="contact">
 	<div class="container">
