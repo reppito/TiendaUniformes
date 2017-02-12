@@ -2,19 +2,19 @@
 <html>
 <head>
 <title>Tienda Uniformes</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+{!!Html::style('css/bootstrap.css')!!}
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Custom Theme files -->
-<link href="css/style2.css" rel="stylesheet" type="text/css" media="all"/>
+{!!Html::style('css/style2.css')!!}
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--Google Fonts-->
-<script src="js/jquery-1.11.0.min.js"></script>
+{!!Html::script('js/jquery-1.11.0.min.j')!!}
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+{!!Html::script('js/move-top.js')!!}
+{!!Html::script('js/easing.js')!!}
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
@@ -38,9 +38,9 @@
 
 		   	<nav class="cl-effect-13" id="cl-effect-13">
 					<ul class="res">
-						<li><a href="index.html">principal <span class="glyphicon glyphicon-user"></span></a></li>
+						<li><a href="{!! asset('/') !!}">principal <span class="glyphicon glyphicon-user"></span></a></li>
 						<li><a href="about.html">nosotros <span class="	glyphicon glyphicon-phone-alt"></span><span></span></a></li>
-						<li><a href="#contact" class="scroll">login<span class="	glyphicon glyphicon-off"></span></a></li>
+						<li><a href="{{URL::to('usuario')}}">Prueba<span class="	glyphiconglyphicon-off"></a></li>
 					</ul>
 				</nav>
 				<!-- script-for-menu -->

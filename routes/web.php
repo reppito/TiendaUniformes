@@ -12,4 +12,8 @@
 */
 
 Route::get('/', 'principal@index');
-Route::get('CreateUser', 'UsuarioController@create');
+
+//rutas controladorUsuario
+Route::get('usuario/ingresar', 'UsuarioController@ingresar');
+Route::resource('usuario','UsuarioController')
+?>

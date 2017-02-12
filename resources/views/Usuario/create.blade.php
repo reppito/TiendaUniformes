@@ -3,8 +3,10 @@
 <div class="col-xs-4 col-xs-offset-4">
   {!!Form::open()!!}
   <div class="form-group">
+    <div class=" col-xs-offset-4">
+      {!!Form::label('REGISTRO DE USUARIO',null,['class'=>'.text-left '])!!}
+    </div>
 
-    {!!Form::label('nombre',null,['class'=>'.text-left'])!!}
     <br>
      {!!Form::text('nombre',null,['class'=>'form-control','placeholder'=>'Ingrese su nombre'])!!}
      <br>

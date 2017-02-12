@@ -11,9 +11,13 @@ class UsuarioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function ingresar(){
+       return view('Usuario.login');
+     }
+
     public function index()
     {
-        //
+
     }
 
     /**
