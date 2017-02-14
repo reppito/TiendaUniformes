@@ -17,7 +17,8 @@ class UsuarioController extends Controller
 
     public function index()
     {
-
+        $usuarios= \TiendaUniformes\Usuario::all();
+        return view('Usuario.index',compact('usuarios'));
     }
 
     /**
@@ -38,7 +39,15 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         \TiendaUniformes\Usuario::create([
+           'nombre' => $request['nombre']
+           ,'apellido'=> $request['apellido']
+           ,'cedula' => $request['cedula']
+           ,'email'  => $request['email']
+           ,'password' => bcrypt($request['password'])
+           , 'id_privilegio'=> '1'
+         ]);
+         return "usuario registrado";
     }
 
     /**
