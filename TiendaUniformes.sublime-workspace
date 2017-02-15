@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fore",
+				"foreign"
+			],
+			[
 				"QIN",
 				"MAX_QIN"
 			],
@@ -331,32 +335,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "php artisan make:migration ",
-			"settings":
-			{
-				"buffer_size": 27,
-				"line_ending": "Windows",
-				"name": "php artisan make:migration"
-			}
-		},
-		{
-			"file": "database/migrations/2017_02_14_225138_create_conductor_table.php",
-			"settings":
-			{
-				"buffer_size": 590,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "database/migrations/2014_02_10_122018_create_privilegio_table.php",
-			"settings":
-			{
-				"buffer_size": 650,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -385,10 +363,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "Install",
+		"height": 150.0,
+		"last_filter": "Git Push",
 		"selected_items":
 		[
+			[
+				"Git Push",
+				"Git: Push"
+			],
+			[
+				"Commit",
+				"Git: Commit"
+			],
+			[
+				"Git Add",
+				"Git: Add All"
+			],
+			[
+				"Remove ",
+				"Package Control: Remove Package"
+			],
 			[
 				"Install",
 				"Package Control: Install Package"
@@ -444,10 +438,6 @@
 			[
 				"Set Syntax Pawn",
 				"Set Syntax: Pawn"
-			],
-			[
-				"Remove ",
-				"Package Control: Remove Package"
 			],
 			[
 				"Pawn",
@@ -506,7 +496,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 390.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -537,14 +527,48 @@
 	"expanded_folders":
 	[
 		"/D/Programación/Laravel/TiendaUniformes",
+		"/D/Programación/Laravel/TiendaUniformes/app",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers",
+		"/D/Programación/Laravel/TiendaUniformes/bootstrap",
 		"/D/Programación/Laravel/TiendaUniformes/database",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations",
-		"/D/Programación/Laravel/TiendaUniformes/database/seeds"
+		"/D/Programación/Laravel/TiendaUniformes/public",
+		"/D/Programación/Laravel/TiendaUniformes/resources",
+		"/D/Programación/Laravel/TiendaUniformes/resources/assets",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts",
+		"/D/Programación/Laravel/TiendaUniformes/routes"
 	],
 	"file_history":
 	[
-		"/C/php/php.ini",
+		"/D/Programación/Laravel/TiendaUniformes/app/EnvioRecibido.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvio.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvioRechazada.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Conductor.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/UnidadTransporte.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/EnvioAsignado.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/EnvioPerdido.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Direccion.php",
+		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225004_create_unidades_transporte_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225003_create_conductores_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225019_create_envios_asignados_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_15_012220_create_envios_perdidos_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225104_create_envios_recibidos_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224815_create_solicitudes_envio_rechazadas_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224628_create_solicitudes_envio_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/vendor/composer/autoload_static.php",
+		"/D/Programación/Laravel/TiendaUniformes/vendor/composer/autoload_classmap.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225104_create_confirmaciones_envio_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_15_225105_create_envios_perdidos_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225123_create_unidades_transporte_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225138_create_conductores_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224940_create_ordenes_envio_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225043_create_ordenes_envio_canceladas_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224815_create_solicitud_envio_rechazada_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_02_10_122018_create_privilegio_table.php",
+		"/C/php/php.ini",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
@@ -645,32 +669,7 @@
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
 		"/D/Programación/C#/Circuito/Circuito/App.config",
 		"/D/Programación/Java/NetBeans/Perspectiva/.gitignore",
-		"/D/Programación/C#/TBD/ClaseBaseDatos/Estudiante.cs",
-		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/Script Generador de Base de Datos.sql",
-		"/C/Users/Miguel Andrés/Desktop/startbootstrap-shop-item-1.0.4/index.html",
-		"/C/Users/Miguel Andrés/Desktop/TemaLibre/index.php",
-		"/D/Programación/Haskell/circuito/Circuito.hs",
-		"/D/Programación/Java/Eclipse/metodos-graficos/src/Grafica2D.java",
-		"/C/php/php.ini-production",
-		"/D/Programación/C#/TallerBaseDeDatos/Consultas.sql",
-		"/C/Users/Miguel Andrés/AppData/Local/Temp/Cube.java",
-		"/D/Programación/Java/NetBeans/PaintBitmapVector/src/view/PaintPanel.java",
-		"/D/Programación/Haskell/diccionario-numerico/NumericDictionary.hs",
-		"/D/Programación/Haskell/rectangulo-kubrik/KubrikRectangle.hs",
-		"/C/Users/Miguel Andrés/Desktop/Kubrik/Kubrik/kubrik.out",
-		"/D/Programación/Haskell/Real World Haskell/10-25-2015/25-10-2015.hs",
-		"/D/Programación/Haskell/Real World Haskell/10-31-2015/31-10-2015.hs",
-		"/D/Programación/Haskell/Real World Haskell/11-01-2015/11-01-2015.hs",
-		"/D/Programación/Haskell/Real World Haskell/10-21-2015/21-10-2015.hs",
-		"/D/Programación/Haskell/Real World Haskell/10-18-2015/18-10-2015.hs",
-		"/D/Programación/Haskell/Real World Haskell/10-17-2015/17-10-2015.hs",
-		"/D/Programación/C y C++/CLion/.idea/CLion.iml",
-		"/D/Programación/C y C++/CLion/.idea/workspace.xml",
-		"/H/Paquete para Compilar Proyecto MPI/script-compilacion.sh",
-		"/D/Programación/C y C++/tabla-hash/FH.cpp",
-		"/C/xampp/htdocs/TemaLibre/app/Http/routes.php",
-		"/C/xampp/htdocs/TemaLibre/app/Http/Controllers/ControladorInicioSesion.php",
-		"/C/xampp/htdocs/TemaLibre/app/Http/Controllers/ControladorInicio.php"
+		"/D/Programación/C#/TBD/ClaseBaseDatos/Estudiante.cs"
 	],
 	"find":
 	{
@@ -689,6 +688,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"$tabe",
+			"table",
+			"EnviosPerdidos",
 			"php_xml",
 			"tokenizer",
 			"_mbstring",
@@ -813,10 +815,7 @@
 			"asignarVehiculoEnEstadio",
 			"[posiciones]",
 			"obtenerEstadio",
-			"buscarEstadioActual",
-			"ponerJugador",
-			"[posiciones]",
-			"[players] ="
+			"buscarEstadioActual"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -876,103 +875,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 27,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								27,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "php artisan make:migration",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "database/migrations/2017_02_14_225138_create_conductor_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 590,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								503,
-								503
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "database/migrations/2014_02_10_122018_create_privilegio_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 650,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								605,
-								641
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -993,18 +897,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1021,6 +918,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 94.0
 	},
 	"output.sftp":
 	{
