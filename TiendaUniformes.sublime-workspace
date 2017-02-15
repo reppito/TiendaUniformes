@@ -1,0 +1,1076 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"QIN",
+				"MAX_QIN"
+			],
+			[
+				"set",
+				"setUpAdc"
+			],
+			[
+				"ouput",
+				"outputMin"
+			],
+			[
+				"re",
+				"refH"
+			],
+			[
+				"Q",
+				"MAX_QIN"
+			],
+			[
+				"MIN_",
+				"MIN_QIN"
+			],
+			[
+				"MIN",
+				"MIN_QIN"
+			],
+			[
+				"MAX",
+				"MAX_QIN"
+			],
+			[
+				"output",
+				"output"
+			],
+			[
+				"error",
+				"error"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"ou",
+				"output"
+			],
+			[
+				"MAX_",
+				"MAX_QIN"
+			],
+			[
+				"ADC_",
+				"ADC_CHANNEL_TANK_OUTPUT"
+			],
+			[
+				"ADC_C",
+				"ADC_CHANNEL_H_REF"
+			],
+			[
+				"previ",
+				"previousError"
+			],
+			[
+				"prev",
+				"previousDer"
+			],
+			[
+				"previous",
+				"previousInt"
+			],
+			[
+				"H_M",
+				"H_MAX"
+			],
+			[
+				"H_",
+				"H_MIN"
+			],
+			[
+				"previos",
+				"previousState"
+			],
+			[
+				"b",
+				"binaryOuput"
+			],
+			[
+				"setUp",
+				"setUpInputPort"
+			],
+			[
+				"inp",
+				"INPUT_PORT_PIN"
+			],
+			[
+				"INPUT",
+				"INPUT_PORT"
+			],
+			[
+				"INPU",
+				"INPUT_PORT_PIN"
+			],
+			[
+				"OUTPUT",
+				"OUTPUT_PORT"
+			],
+			[
+				"qIn",
+				"qInMax"
+			],
+			[
+				"inu",
+				"inputRangeMin"
+			],
+			[
+				"input",
+				"inputRangeMax"
+			],
+			[
+				"qI",
+				"qInMin"
+			],
+			[
+				"TO",
+				"TOIE0"
+			],
+			[
+				"Es",
+				"EsMAlternante"
+			],
+			[
+				"cantidadDigitosImp",
+				"cantidadDigitosImparesAlFinal"
+			],
+			[
+				"cantidad",
+				"cantidadDigitosPares"
+			],
+			[
+				"canti",
+				"cantidadDigitosParesAlFinal"
+			],
+			[
+				"Cont",
+				"ContarDigitosImparesHastaEncontrarPar"
+			],
+			[
+				"Contar",
+				"ContarDigitosParesHastaEncontrarImpar"
+			],
+			[
+				"cantidadDigitos",
+				"cantidadDigitosPares"
+			],
+			[
+				"nodo",
+				"nodoActual"
+			],
+			[
+				"NOMBRE",
+				"NOMBRE_JUEGO"
+			],
+			[
+				"cantidadJ",
+				"cantidadJugadores"
+			],
+			[
+				"cantidadJu",
+				"cantidadJugadoresEnJuegos"
+			],
+			[
+				"OnPlayerClick",
+				"OnPlayerClickPlayer"
+			],
+			[
+				"NOMBRE_",
+				"NOMBRE_JUEGO"
+			],
+			[
+				"UserEn",
+				"UserEnRace"
+			],
+			[
+				"banderas",
+				"banderaBidimensionales"
+			],
+			[
+				"DERBY_",
+				"DERBY_APAGADO"
+			],
+			[
+				"asignarVehicu",
+				"asignarVehiculoEnEstadio"
+			],
+			[
+				"id_admini",
+				"id_administrador"
+			],
+			[
+				"id_sol",
+				"id_solicitud"
+			],
+			[
+				"id_soli",
+				"id_solicitud_atendida"
+			],
+			[
+				"id_usuario",
+				"id_usuario_suscriptor"
+			],
+			[
+				"id_comenta",
+				"id_comentario_eliminado"
+			],
+			[
+				"id_usua",
+				"id_usuario_bloqueado"
+			],
+			[
+				"min",
+				"minCostTree"
+			],
+			[
+				"pas",
+				"pastSetups"
+			],
+			[
+				"No",
+				"NoTransformation"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"inte",
+				"interactWith"
+			],
+			[
+				"intr",
+				"interactWith"
+			],
+			[
+				"apli",
+				"appliedTrans"
+			],
+			[
+				"circu",
+				"circularRightShift"
+			],
+			[
+				"no",
+				"noTranformation"
+			],
+			[
+				"gener",
+				"generatorFunction"
+			],
+			[
+				"Setup",
+				"SetupTree"
+			],
+			[
+				"cen",
+				"centerClockwiseShift"
+			],
+			[
+				"cir",
+				"circularRightShift"
+			],
+			[
+				"ini",
+				"initialSetup"
+			],
+			[
+				"Control",
+				"ControladorInicioSesion"
+			],
+			[
+				"ControladorIni",
+				"ControladorInicioSesion"
+			],
+			[
+				"nombre",
+				"nombreUsuario"
+			],
+			[
+				"nomr",
+				"nombreUsuario"
+			],
+			[
+				"lon",
+				"lonA"
+			],
+			[
+				"parse",
+				"parseDottedList"
+			],
+			[
+				"read",
+				"readExpr"
+			],
+			[
+				"getS",
+				"getEscapeChar"
+			],
+			[
+				"get",
+				"getEscapeChar"
+			],
+			[
+				"Lis",
+				"LispVal"
+			],
+			[
+				"ca",
+				"calculateAdderValues"
+			],
+			[
+				"groupBy",
+				"groupByMultipliers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "php artisan make:migration ",
+			"settings":
+			{
+				"buffer_size": 27,
+				"line_ending": "Windows",
+				"name": "php artisan make:migration"
+			}
+		},
+		{
+			"file": "database/migrations/2017_02_14_225138_create_conductor_table.php",
+			"settings":
+			{
+				"buffer_size": 590,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2014_02_10_122018_create_privilegio_table.php",
+			"settings":
+			{
+				"buffer_size": 650,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/User/Pawn.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Pawn.sublime-build",
+					"Preprocessed output"
+				],
+				[
+					"Packages/User/Pawn.sublime-build",
+					"P-code output"
+				]
+			],
+			[
+				"Packages/User/Pawn.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Install",
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"glue ",
+				"Glue - Launch"
+			],
+			[
+				"Git",
+				"Github: Repository"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: List Packages"
+			],
+			[
+				"Rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Install Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Ja",
+				"Set Syntax: Java"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"Set C",
+				"Set Syntax: C"
+			],
+			[
+				"Set Xml",
+				"Set Syntax: XML"
+			],
+			[
+				"Set Syn",
+				"Set Syntax: C++"
+			],
+			[
+				"Set Syntax Pawn",
+				"Set Syntax: Pawn"
+			],
+			[
+				"Remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Pawn",
+				"Set Syntax: Pawn"
+			],
+			[
+				"Lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"Lis",
+				"Set Syntax: Lisp"
+			],
+			[
+				"Haske",
+				"Set Syntax: Haskell"
+			],
+			[
+				"JA",
+				"Set Syntax: Java"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"SEt SYNTAX C++",
+				"Set Syntax: C++"
+			],
+			[
+				"SEt SYNTAX C",
+				"Set Syntax: C"
+			],
+			[
+				"SEt SYNTAX",
+				"Set Syntax: SQL"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 390.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"echo \"${project_path:${folder}}\"",
+			"echo ${project_path:${folder}}",
+			"php --version",
+			"glue",
+			"php --version",
+			"glue",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Programación/Laravel/TiendaUniformes",
+		"/D/Programación/Laravel/TiendaUniformes/database",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds"
+	],
+	"file_history":
+	[
+		"/C/php/php.ini",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_02_10_122018_create_privilegio_table.php",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/keymaps/Default (Windows).sublime-keymap",
+		"/D/Programación/Laravel/TiendaUniformes/.gitignore",
+		"/D/Programación/Laravel/TiendaUniformes/terminal.glue",
+		"/D/Programación/C y C++/Tanque/Controlador.c",
+		"/D/Programación/C y C++/Tanque/Tanque.c",
+		"/C/Users/Miguel Andrés/AppData/Local/Temp/Temp1_br3ttb-Arduino-PID-Library-v1.1.1-2-gfb095d8.zip/br3ttb-Arduino-PID-Library-fb095d8/README.txt",
+		"/D/Programación/C y C++/Tanque/main.h",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Matrix.cpp",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Node.h",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Multiplication.cpp",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Multiplication.h",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Input.h",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Master.h",
+		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Parallel.cpp",
+		"/D/Programación/C y C++/lista_de_personas/main.cpp",
+		"/D/Programación/C y C++/tabla-hash/main.cpp",
+		"/D/Programación/C y C++/tabla-hash/X.h",
+		"/D/Programación/C y C++/tabla-hash/X.cpp",
+		"/D/Programación/C y C++/tabla-hash/TablaHash.h",
+		"/D/Programación/C y C++/tabla-hash/TablaHash.cpp",
+		"/D/Programación/C y C++/ahorcado/main.cpp",
+		"/D/Programación/C y C++/formas/main.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Proyectil.java",
+		"/D/Programación/C y C++/abecedario.cpp",
+		"/D/Programación/C y C++/figura.cpp",
+		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/meta.xml",
+		"/D/Programación/SA-MP/MTL/gamemodes/mtl_c.pwn",
+		"/D/Programación/SA-MP/MTL/server.cfg",
+		"/D/Programación/SA-MP/MTL/gamemodes/MTL_C2.pwn",
+		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/rx.lua",
+		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/test.lua",
+		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/mtaserver.conf",
+		"/C/ProgramData/Microsoft/Windows/Start Menu/Programs/MTA San Andreas 1.5/MTA San Andreas.lnk",
+		"/D/Programación/C y C++/ejercicio-tedd-2/ejercicio-tedd-2/main.cpp",
+		"/D/Programación/C y C++/ejercicio-tedd-1/ejercicio-tedd-1/main.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Volumen Movil.rar",
+		"/C/Users/Miguel Andrés/Desktop/Volumen.cs",
+		"/C/Users/Miguel Andrés/Desktop/KnobView.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/Resources/layout/Main.axml",
+		"/D/Programación/Xamarin/Computación Móvil (2017-01-21)/TallerControlesPersonalizados/MainActivity.cs",
+		"/D/Programación/Java/NetBeans/GuerraAeronaves/core/assets/mapas/mapa2.txt",
+		"/D/Programación/Java/NetBeans/GuerraAeronaves/core/assets/mapas/mapa1.txt",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Microsoft/Windows/Recent/MTL_C2.pwn.lnk",
+		"/D/Programación/SA-MP/MTL/gamemodes/CantidadJugadoresPorJuegos.pwn",
+		"/D/Programación/SA-MP/MTL/server_log.txt",
+		"/D/Programación/SA-MP/MTL/pawno/include/pointers.inc",
+		"/D/Programación/SA-MP/MTL/server-readme.txt",
+		"/C/Users/Miguel Andrés/Desktop/Servicio Comunitario/Números de páginas a imprimir.txt",
+		"/C/Users/Miguel Andrés/Desktop/Servicio Comunitario/Página a imprimir.txt",
+		"/C/Users/Miguel Andrés/Desktop/samp037_svr_R2-1-1_win32/gamemodes/grandlarc.pwn",
+		"/D/Programación/SA-MP/MTL/filterscripts/GTA1.pwn",
+		"/C/Users/Miguel Andrés/Desktop/samp037_svr_R2-1-1_win32/gamemodes/mapas.pwn",
+		"/C/Users/Miguel Andrés/Documents/GTA San Andreas User Files/SAMP/chatlog.txt",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/defaultvclasses.xml",
+		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/vsm.edf",
+		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/meta.xml",
+		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT].old/vehiclespawnmanager/spawnpoints.map",
+		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/main.lua",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/timecyc.dat",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/vehicles.ide",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/txdcut.ide",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/surface.dat",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/surfaud.dat",
+		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/timecycp.dat",
+		"/H/WindowsFormsApplication3/WindowsFormsApplication3/FormaVerAsistencia.cs",
+		"/H/Miguel Contreras - TBDD (13-05-2016).sql",
+		"/C/Users/Miguel Andrés/Desktop/StoredProcedures.sql",
+		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/MySQL/consultas.sql",
+		"/C/Users/Miguel Andrés/Desktop/Ejercicios para IV Parcial/dalmaschio/main.cpp",
+		"/D/Programación/C y C++/modelo_III_parcial/main.cpp",
+		"/D/Programación/C y C++/son_filas_iguales_a_columnas/main.cpp",
+		"/C/Users/Miguel Andrés/AppData/Local/Temp/Temp1_DataTables-1.10.12.zip/DataTables-1.10.12/Readme.md",
+		"/C/xampp/mysql/README",
+		"/C/xampp/mysql/bin/my.ini",
+		"/C/Users/Miguel Andrés/Desktop/Adyacencia/Grafo.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Adyacencia/main.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Adyacencia/GestorArchivos.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Adyacencia/MatrizIncidencia.cpp",
+		"/C/Users/Miguel Andrés/Desktop/Adyacencia/MatrizAdyacencia.cpp",
+		"/H/Proyeccion_1_Punto/src/Modelo/PanelDeDibujo.java",
+		"/H/Cuadrado/src/rectangulo/Frame.java",
+		"/H/Cuadrado/src/rectangulo/Panel.java",
+		"/H/Cuadrado/src/rectangulo/Rectangulo.java",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/PostgreSQL/Tablas.sql",
+		"/D/Programación/C#/Circuito/Circuito/GateXor.cs",
+		"/D/Programación/C#/Circuito/Circuito/Insulator.cs",
+		"/D/Programación/C#/Circuito/Circuito/PowerSupply.cs",
+		"/D/Programación/C#/Circuito/Circuito/Program.cs",
+		"/D/Programación/C#/Circuito/Circuito/Conductor.cs",
+		"/C/Users/Miguel Andrés/Desktop/tablas.sql",
+		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/Tablas.sql",
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/D/Programación/C#/Circuito/Circuito/App.config",
+		"/D/Programación/Java/NetBeans/Perspectiva/.gitignore",
+		"/D/Programación/C#/TBD/ClaseBaseDatos/Estudiante.cs",
+		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/Script Generador de Base de Datos.sql",
+		"/C/Users/Miguel Andrés/Desktop/startbootstrap-shop-item-1.0.4/index.html",
+		"/C/Users/Miguel Andrés/Desktop/TemaLibre/index.php",
+		"/D/Programación/Haskell/circuito/Circuito.hs",
+		"/D/Programación/Java/Eclipse/metodos-graficos/src/Grafica2D.java",
+		"/C/php/php.ini-production",
+		"/D/Programación/C#/TallerBaseDeDatos/Consultas.sql",
+		"/C/Users/Miguel Andrés/AppData/Local/Temp/Cube.java",
+		"/D/Programación/Java/NetBeans/PaintBitmapVector/src/view/PaintPanel.java",
+		"/D/Programación/Haskell/diccionario-numerico/NumericDictionary.hs",
+		"/D/Programación/Haskell/rectangulo-kubrik/KubrikRectangle.hs",
+		"/C/Users/Miguel Andrés/Desktop/Kubrik/Kubrik/kubrik.out",
+		"/D/Programación/Haskell/Real World Haskell/10-25-2015/25-10-2015.hs",
+		"/D/Programación/Haskell/Real World Haskell/10-31-2015/31-10-2015.hs",
+		"/D/Programación/Haskell/Real World Haskell/11-01-2015/11-01-2015.hs",
+		"/D/Programación/Haskell/Real World Haskell/10-21-2015/21-10-2015.hs",
+		"/D/Programación/Haskell/Real World Haskell/10-18-2015/18-10-2015.hs",
+		"/D/Programación/Haskell/Real World Haskell/10-17-2015/17-10-2015.hs",
+		"/D/Programación/C y C++/CLion/.idea/CLion.iml",
+		"/D/Programación/C y C++/CLion/.idea/workspace.xml",
+		"/H/Paquete para Compilar Proyecto MPI/script-compilacion.sh",
+		"/D/Programación/C y C++/tabla-hash/FH.cpp",
+		"/C/xampp/htdocs/TemaLibre/app/Http/routes.php",
+		"/C/xampp/htdocs/TemaLibre/app/Http/Controllers/ControladorInicioSesion.php",
+		"/C/xampp/htdocs/TemaLibre/app/Http/Controllers/ControladorInicio.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"php_xml",
+			"tokenizer",
+			"_mbstring",
+			"Mbstring",
+			"pdo",
+			"\\",
+			"float ",
+			"OUTPUT_PORT",
+			"ADC_CHANNEL_TANK_OUTPUT",
+			"ADC_CHANNEL_H_REF",
+			"MIN_H",
+			"REF_H",
+			"BINARY_MIN_QIN",
+			"BINARY_MAX_QIN",
+			"QIN_MAX",
+			"QIN_MIN",
+			"H_REF",
+			"H_MAX",
+			"H_MIN",
+			"readAdc",
+			"ReadADC",
+			"IO_DDR",
+			"OUTPUT_DDR",
+			"OUTPUT_DDR_PIN",
+			"OUTPUT_PORT",
+			"dim",
+			"dcmd_enable",
+			"enable",
+			"/enable",
+			"BuildRace =",
+			"BuildRace",
+			"ShowDialog",
+			"599, ",
+			"599",
+			"carrera\"",
+			"CallLocalFunction",
+			"mostrarDialogo",
+			"mostraDialo",
+			"UserEnModo",
+			"UserEnTextDraw",
+			"OnPlayerRequest",
+			"mostrarDialogoJugadores",
+			"funcidx",
+			" *(On)([^(])*([^)])*",
+			"Cantidad",
+			"mostrarDialogo",
+			"DIALOG_NULL",
+			"\"/gw",
+			"\"/salir",
+			"EsGrove",
+			"/cs",
+			"public ",
+			"forward ",
+			"UserEnModo",
+			"forward",
+			"foward",
+			" *Es([A-Z])([a-z])*\\[MAX_PLAYERS\\]",
+			" *Es([A-Z])([a-z])*",
+			" *Es([A-Z])*\\[MAX_PLAYERS\\] *,",
+			" *Es([A-Z])*\\[MAX_PLAYERS\\]",
+			" *Es([A-Z])*\\[(MAX_PLAYERS)\\]",
+			" *Es([A-Z])*\\[(MAX_PLAYERS)*\\]",
+			" *Es([A-Z])*([A-Z])+\\[(MAX_PLAYERS)*\\]",
+			" *Es([A-Z])*([A-Z a-z])+\\[(MAX_PLAYERS)*\\]",
+			" *([a-z A-Z])+Es([A-Z])*([A-Z a-z])+\\[(MAX_PLAYERS)*\\]",
+			" *([a-z A-Z])+Es([A-Z])*([A-Z a-z])+\\[([^\\]])*\\]",
+			" *([a-z A-Z])+En([A-Z])*([A-Z a-z])+\\[([^\\]])*\\]",
+			"UserEnRace",
+			" *([a-z A-Z])+En([A-Z])*([A-Z a-z])+\\[([^\\]])*\\]",
+			"EstaEnJuego",
+			" *([a-z A-Z])+En([A-Z])*([A-Z a-z])+\\[([^\\]])*\\]",
+			" *([a-z A-Z])+En([^[])*\\[([^\\]])*\\]",
+			" *enum *([^{])*{",
+			" *(new) *([a-z A-Z])+En([^[])*\\[([^\\]])*\\]",
+			" *(new) *([a-z A-Z])*En([^[])*\\[([^\\]])*\\]",
+			" *(new)",
+			"new EnDuelo[",
+			"EstaEn",
+			" *(e_)",
+			"e_",
+			"define dcmd",
+			"SetTimerEx(\"Actualizar",
+			" *(PlayerTextDrawShow)",
+			" *(PlayerTextDrawShow()",
+			" *(OnPlayerConnect)",
+			" *(OnGameModeInit)",
+			" *(Barra)\\[([^\\]])*\\]\\[([^\\]])*\\]",
+			"Stats[",
+			"new Stats",
+			"Stats[playerid]",
+			"crearTxdJugador",
+			"Stats[playerid] = ",
+			"Actualizar(playerid)",
+			"Actualizar(playerid",
+			"TextDrawShowForPlayer",
+			"TextDrawCreate",
+			"HeadShot[",
+			"new HeadShot",
+			"Barra\\[",
+			"Barra[",
+			"Barra",
+			"new Barra",
+			"actualizarDerby",
+			"ESTADIO_ENJUEGO",
+			"verificarVehiculo",
+			"[distancia]",
+			"sizeof (estadios)",
+			"estadios",
+			"printf(\"",
+			"printf(\" - DERBY DEBUG",
+			"printf(",
+			"estadios",
+			"asignarVehiculo",
+			"asignarVehiculoEnEstadio",
+			"asignarVehiculo2",
+			"[posiciones]",
+			"asignarVehiculoEnEstadio",
+			"[players]++;",
+			"estadios[identificador][players]++;",
+			"new num = estadios",
+			"new num =",
+			"asignarVehiculoEnEstadio",
+			"[posiciones]",
+			"obtenerEstadio",
+			"buscarEstadioActual",
+			"ponerJugador",
+			"[posiciones]",
+			"[players] ="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\\\",
+			"double ",
+			"double",
+			"ADC_CHANNEL_TANK_H",
+			"ADC_CHANNEL_REF_H",
+			"MIN_BINARY_QIN",
+			"MAX_BINARY_QIN",
+			"MAX_QIN",
+			"MIN_QIN",
+			"REF_H",
+			"MIN_H",
+			"readFromAdc",
+			"readAdc",
+			"INPUT_DDR",
+			"IO_DDR",
+			"OUPUT_PORT_PIN",
+			"OUTPUT_DDR",
+			"n",
+			"public bool:",
+			"forward bool:",
+			"forward (idJugador);",
+			"forward",
+			"obtenerEstadioActual",
+			"DERBY DEBUG",
+			"//printf(\" - DEBUG DERBY:",
+			"DATETIME",
+			"AUTO_INCREMENT",
+			"INT AUTOINCREMENT",
+			") ENGINE=INNODB;",
+			"ENGINE=INNODB;",
+			"FOREIGN KEY REFERENCES",
+			"lista1",
+			"rootNode",
+			"noTranformation",
+			"trackPath",
+			"numPostOffices",
+			"numCities",
+			"cities",
+			"mostrar_instrucciones",
+			"mostrar_portada",
+			"INT",
+			"VARCHAR"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "php artisan make:migration",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "database/migrations/2017_02_14_225138_create_conductor_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "database/migrations/2014_02_10_122018_create_privilegio_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								641
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "TiendaUniformes.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 368.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
