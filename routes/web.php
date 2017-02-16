@@ -15,5 +15,11 @@ Route::get('/', 'principal@index');
 
 //rutas controladorUsuario
 Route::get('usuario/ingresar', 'UsuarioController@ingresar');
-Route::resource('usuario','UsuarioController')
+Route::resource('usuario','UsuarioController');
+
+// Rutas de Miguel
+Route::resource('conductor', 'ConductorController');
+
+Route::resource('proveedores','ProveedoresController');
 ?>
+

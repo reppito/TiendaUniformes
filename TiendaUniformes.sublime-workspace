@@ -372,12 +372,20 @@
 				"Git: Push"
 			],
 			[
-				"Commit",
+				"Git Comm",
 				"Git: Commit"
 			],
 			[
 				"Git Add",
 				"Git: Add All"
+			],
+			[
+				"Git Commit",
+				"Git: Commit"
+			],
+			[
+				"Commit",
+				"Git: Commit"
 			],
 			[
 				"Remove ",
@@ -542,6 +550,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Miguel Andrés/Desktop/Program.exe",
 		"/D/Programación/Laravel/TiendaUniformes/app/EnvioRecibido.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvio.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvioRechazada.php",
@@ -668,8 +677,7 @@
 		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/Tablas.sql",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
 		"/D/Programación/C#/Circuito/Circuito/App.config",
-		"/D/Programación/Java/NetBeans/Perspectiva/.gitignore",
-		"/D/Programación/C#/TBD/ClaseBaseDatos/Estudiante.cs"
+		"/D/Programación/Java/NetBeans/Perspectiva/.gitignore"
 	],
 	"find":
 	{
