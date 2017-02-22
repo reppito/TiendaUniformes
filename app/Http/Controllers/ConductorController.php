@@ -37,10 +37,13 @@ class ConductorController extends Controller
     {
     	// TO-DO: hacer importación para recortar código.
         \TiendaUniformes\Conductor::create([
-        		  'cedula_identidad' 	=> $request['cedula_identidad']
-        		, 'nombre' 				=> $request['nombre']
-        		, 'apellido' 			=> $request['apellido']
-        		, 'activo' 				=> '1'
+        		  'cedula' => $request['cedula']
+        		, 'nombre' => $request['nombre']
+        		, 'apellido' => $request['apellido']
+                , 'fecha_nacimiento' => $request['fecha_nacimiento']
+                , 'fecha_inicio_contrato' => $request['fecha_inicio_contrato']
+                , 'grado_licencia_conducir' => $request['grado_licencia_conducir']
+        		, 'activo' => '1'
         	]);
         return 'Conductor almacendao correctamente.';
     }
