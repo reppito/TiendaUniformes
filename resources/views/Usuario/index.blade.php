@@ -1,6 +1,7 @@
 @extends('layouts.Administrador')
 
 @section('content')
+<div class="col-md-8 col-md-offset-2">
    <table class="table">
      <thead>
        <th>Nombre</th>
@@ -22,4 +23,5 @@
 
 
    </table>
+   <div>
 @stop

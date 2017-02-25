@@ -1,16 +1,16 @@
 @extends('layouts.Administrador')
 
 @section('content')
-<div class="col-xs-6 col-xs-offset-3">
+<div class="col-xs-8 col-xs-offset-2">
   <table class="table">
     <thead>
-      <th>Cédula de Identidad</th>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th>Fecha de Nacimiento</th>
-      <th>Fecha de Inicio de Contrato</th>
-      <th>Grado de Licencia de Conducir</th>
-      <th>Activo</th>
+      <th class="text-center">Cédula de Identidad</th>
+      <th  class="text-center">Nombre</th>
+      <th class="text-center">Apellido</th>
+      <th class="text-center">Fecha de Nacimiento</th>
+      <th class="text-center">Fecha de Inicio de Contrato</th>
+      <th class="text-center">Grado de Licencia de Conducir</th>
+      <th class="text-center">Activo</th>
     </thead>
 
   @foreach ($conductores as $conductor)

@@ -32,26 +32,11 @@
 	<div class="container">
 	  <div class="header-main">
 	     <div class="logo">
-		    <h1><a href="index.html">Tienda Uniformes</a></h1>
+		    <h1><a href="{{URL::to('/')}}">Tienda Uniformes</a></h1>
 		 </div>
 		 <div class="top-nav">
 
-		   	<nav class="cl-effect-13" id="cl-effect-13">
-					<ul class="res">
-						<li><a href="{!! asset('/') !!}">principal <span class="glyphicon glyphicon-user"></span></a></li>
-						<li><a href="about.html">nosotros <span class="	glyphicon glyphicon-phone-alt"></span><span></span></a></li>
-						<li><a href="{{URL::to('usuario/ingresar')}}">Prueba<span class="	glyphiconglyphicon-off"></a></li>
-					</ul>
-				</nav>
-				<!-- script-for-menu -->
-								 <script>
-								   $( "span.menu" ).click(function() {
-									 $( "ul.res" ).slideToggle( 300, function() {
-									 // Animation complete.
-									  });
-									 });
-								</script>
-				<!-- /script-for-menu -->
+		   	@include('menus.principalmenu')
 
 		 </div>
 	     <div class="clearfix"> </div>

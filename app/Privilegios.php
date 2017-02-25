@@ -8,6 +8,6 @@ class Privilegios extends Model
 {
   protected $table="privilegios";
   protected $timestamps=false;
-
+  protected $fillable=['privilegio'];
     //
 }

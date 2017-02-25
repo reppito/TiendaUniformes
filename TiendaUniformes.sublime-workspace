@@ -363,17 +363,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 150.0,
-		"last_filter": "Git Push",
+		"height": 392.0,
+		"last_filter": "Git P",
 		"selected_items":
 		[
 			[
-				"Git Push",
-				"Git: Push"
+				"Git P",
+				"Git: Pull"
 			],
 			[
 				"Git Comm",
 				"Git: Commit"
+			],
+			[
+				"Git Add ",
+				"Git: Add All"
+			],
+			[
+				"Git Push",
+				"Git: Push"
 			],
 			[
 				"Git Add",
