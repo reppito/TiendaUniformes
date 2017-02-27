@@ -22,8 +22,13 @@ Route::resource('login','LogController');
 
 
 // Rutas de Miguel
-Route::resource('conductor', 'ConductorController');
+Route::resource('conductores', 'ConductorController');
 
+Route::resource('solicitudes-envio', 'SolicitudEnvioController');
+Route::post('solicitudes-envio/{idSolicitudEnvio}/accept', 'SolicitudEnvioController@accept');
+Route::post('solicitudes-envio/{idSolicitudEnvio}/reject', 'SolicitudEnvioController@reject');
+
+// Rutas de Rafael
 Route::resource('proveedores','ProveedoresController');
 
 ?>

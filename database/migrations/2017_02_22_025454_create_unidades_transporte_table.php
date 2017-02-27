@@ -15,7 +15,7 @@ class CreateUnidadesTransporteTable extends Migration
     {
         Schema::create('unidades_transporte', function (Blueprint $table) {
             $table->increments('id');
-            $table->char('matricula', 8);
+            $table->char('matricula', 8)->unique();
             $table->string('marca');
             $table->string('modelo');
             $table->smallInteger('ano');
