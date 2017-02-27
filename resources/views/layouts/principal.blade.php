@@ -45,7 +45,7 @@
 </div>
 <!--header end here-->
 <!--short codes start here-->
-
+  @include('alert')
    @yield('content')
 	 <div class="clearfix"> </div>
 <!--get in touch start here-->

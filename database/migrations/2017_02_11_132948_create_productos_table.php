@@ -21,7 +21,7 @@ class CreateProductosTable extends Migration
             $table->string('descripcion');
             $table->integer('disponibles');
             $table->decimal('precio',8,3);
-            $table->binary('foto');
+
 
             $table->timestamps();
         });

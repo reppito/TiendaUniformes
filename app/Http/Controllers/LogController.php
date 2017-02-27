@@ -3,31 +3,25 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use TiendaUniformes\Http\Requests\LogRequest;
 use Auth;
 use Session;
 use Redirect;
 
-class UsuarioController extends Controller
+class LogController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-     public function ingresar(){
-       if(Auth::check())
-        return view('index');
-       return view('Usuario.login');
+     public function logout(){
+       Auth::logout();
+       return Redirect::to('/');
      }
-
-
-
     public function index()
     {
-        $usuarios= \TiendaUniformes\Usuario::all();
-        return view('Usuario.index',compact('usuarios'));
+        //
     }
 
     /**
@@ -37,7 +31,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('Usuario.create');
+        //
     }
 
     /**
@@ -46,17 +40,12 @@ class UsuarioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LogRequest $request)
     {
-         \TiendaUniformes\Usuario::create([
-           'nombre' => $request['nombre']
-           ,'apellido'=> $request['apellido']
-           ,'cedula' => $request['cedula']
-           ,'email'  => $request['email']
-           ,'password' => bcrypt($request['password'])
-           , 'id_privilegio'=> '1'
-         ]);
-         return "usuario registrado";
+        if (Auth::attempt(['email'=> $request['email'],'password'=> $request['contrasena']])) {
+          return Redirect::to('/');
+        }
+        return "datos incorrectos intente de nuevo";
     }
 
     /**

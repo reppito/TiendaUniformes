@@ -79,7 +79,7 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 			</div>
 		<!-- //header-ends -->
 			<div id="page-wrapper">
-
+        @include('alert')
 			   @yield('content')
 				</div>
 			<!--body wrapper start-->
