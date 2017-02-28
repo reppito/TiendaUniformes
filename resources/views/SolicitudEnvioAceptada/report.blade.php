@@ -8,7 +8,7 @@
     {{ csrf_field() }}
     <div class="form-group">  	
       <label for="fecha-entrega">Fecha de entrega: </label>
-      <date class="form-control" name="fecha_reporte_entrega"/>
+      <input type="date" class="form-control" name="fecha_reporte_entrega"/>
     </div>
     <div class="form-group text-center">
       <button type="submit" class="btn btn-success">Reportar</button>
