@@ -3,6 +3,7 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \TiendaUniformes\Conductor;
 
 class ConductorController extends Controller
 {
@@ -13,7 +14,7 @@ class ConductorController extends Controller
      */
     public function index()
     {
-        $conductores = \TiendaUniformes\Conductor::all();
+        $conductores = Conductor::all();
         return view('Conductor.index', compact('conductores'));
     }
 
@@ -36,7 +37,7 @@ class ConductorController extends Controller
     public function store(Request $request)
     {
     	// TO-DO: hacer importación para recortar código.
-        \TiendaUniformes\Conductor::create([
+        Conductor::create([
         		  'cedula' => $request['cedula']
         		, 'nombre' => $request['nombre']
         		, 'apellido' => $request['apellido']

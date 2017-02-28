@@ -12,32 +12,28 @@ class TablaPrivilegiosSeeder extends Seeder
     public function run()
     {
         DB::table('privilegios')->insert([
-           'privilegio'=> 'moderador'
+           'privilegio'=> 'Usuario'
          ]);
 
         DB::table('privilegios')->insert([
-        	'privilegio'=> 'moderador'
-
-        	]);
+           'privilegio'=> 'Moderador'
+         ]);
 
         DB::table('privilegios')->insert([
         	'privilegio'=> 'AdministradorTienda'
-
         	]);
 
         DB::table('privilegios')->insert([
         	'privilegio'=> 'AdministradorInventario'
-
         	]);
 
         DB::table('privilegios')->insert([
         	'privilegio'=> 'AdministradorEnvio'
-
         	]);
 
-
+        DB::table('privilegios')->insert([
+            'privilegio'=> 'AdministradorGlobal'
+            ]);
 
     }
-    	
-    
 }

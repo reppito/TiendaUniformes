@@ -16,7 +16,7 @@ class CreatePrivilegioTable extends Migration
         Schema::create('privilegios', function (Blueprint $table) {
            $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('privilegio');
+            $table->string('privilegio', 64)->unique();
 
         });
     }
