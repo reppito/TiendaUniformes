@@ -21,6 +21,7 @@ class CreateUnidadesTransporteTable extends Migration
             $table->smallInteger('ano');
             $table->integer('cantidad_maxima_productos');
             $table->boolean('activa');
+            $table->boolean('disponible');
 
             $table->timestamps();
         });

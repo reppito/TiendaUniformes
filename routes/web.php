@@ -28,6 +28,12 @@ Route::resource('solicitudes-envio', 'SolicitudEnvioController');
 Route::post('solicitudes-envio/{idSolicitudEnvio}/accept', 'SolicitudEnvioController@accept');
 Route::post('solicitudes-envio/{idSolicitudEnvio}/reject', 'SolicitudEnvioController@reject');
 
+Route::resource('solicitudes-envio-aceptadas', 'SolicitudEnvioAceptadaController');
+Route::post('solicitudes-envio-aceptadas/{idSolicitudEnvio}/route', 'SolicitudEnvioAceptadaController@route');
+Route::post('solicitudes-envio-aceptadas/{idSolicitudEnvio}/report', 'SolicitudEnvioAceptadaController@report');
+
+Route::resource('rutas-transporte', 'RutaTransporteController');
+
 // Rutas de Rafael
 Route::resource('proveedores','ProveedoresController');
 

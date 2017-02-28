@@ -20,6 +20,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '2000'
         	, 'cantidad_maxima_productos' => '50'
         	, 'activa' => '1'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);
@@ -31,6 +32,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '2006'
         	, 'cantidad_maxima_productos' => '51'
         	, 'activa' => '1'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);
@@ -42,6 +44,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '2000'
         	, 'cantidad_maxima_productos' => '52'
         	, 'activa' => '1'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);
@@ -53,6 +56,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '1998'
         	, 'cantidad_maxima_productos' => '51'
         	, 'activa' => '1'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);
@@ -64,6 +68,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '2016'
         	, 'cantidad_maxima_productos' => '54'
         	, 'activa' => '1'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);
@@ -75,6 +80,7 @@ class TablaUnidadesTransporteSeeder extends Seeder
         	, 'ano' => '2010'
         	, 'cantidad_maxima_productos' => '100'
         	, 'activa' => '0'
+            , 'disponible' => '1'
             , 'created_at' => Carbon::now()
             , 'updated_at' => Carbon::now()
         ]);

@@ -30,7 +30,7 @@ class CreateRutasTransporteTable extends Migration
 
             $table->integer('id_usuario_creador')->unsigned()->nullable();
             $table->foreign('id_usuario_creador')->references('id')->on('usuarios')
-                ->onDelete('set null');                
+                ->onDelete('set null');  
 
             $table->timestamps();
         });

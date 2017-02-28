@@ -10,9 +10,13 @@ use \TiendaUniformes\ProductoComprado;
 use \TiendaUniformes\Producto;
 use \TiendaUniformes\Usuario;
 use \TiendaUniformes\Direccion;
-use Auth;
+use \TiendaUniformes\EnvioEntregado;
+use \TiendaUniformes\EnvioExtraviado;
+use \TiendaUniformes\EnvioRetornado;
+use \TiendaUniformes\RutaTransporte;
+use \TiendaUniformes\UnidadTransporte;
 
-class SolicitudEnvioController extends Controller
+class SolicitudEnvioAceptadaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,12 +25,13 @@ class SolicitudEnvioController extends Controller
      */
     public function index()
     {
-        // TO-DO: reemplazar al terminar las relaciones entre modelos.
-        $solicitudesEnvio = SolicitudEnvio::all()
-            ->reject(function ($solicitudEnvio, $key) {
-                return SolicitudEnvioAceptada::where('id', $solicitudEnvio->id)->count() > 0 || SolicitudEnvioRechazada::where('id', $solicitudEnvio->id)->count() > 0;
+        $solicitudesEnvioAceptadas = SolicitudEnvioAceptada::all()
+            ->reject(function ($solicitudEnvioAceptada, $key) {
+                return EnvioEntregado::where('id', $solicitudEnvioAceptada->id)->count() > 0 || EnvioExtraviado::where('id', $solicitudEnvioAceptada->id)->count() > 0 || EnvioRetornado::where('id', $solicitudEnvioAceptada->id)->count() > 0;
             })
-            ->map(function ($solicitudEnvio, $key) {
+            ->map(function ($solicitudEnvioAceptada, $key) {
+                $solicitudEnvio = SolicitudEnvio::where('id', $solicitudEnvioAceptada->id_solicitud_envio)->first();
+
                 $descripcion = Producto::where('id', ProductoComprado::where('id', $solicitudEnvio->id_producto_comprado)->first()->id_producto)->first()->descripcion;
                 
                 $usuarioSolicitante = Usuario::where('id', $solicitudEnvio->id_usuario_solicitante)->first(); 
@@ -38,32 +43,42 @@ class SolicitudEnvioController extends Controller
                 $direccion_entrega = $direccion->calle . ', ' . $direccion->ciudad . ', ' . $direccion->zip_code;
 
                 return [
-                      'id' => $solicitudEnvio->id
+                      'id' => $solicitudEnvioAceptada->id
                     , 'descripcion' => $descripcion
                     , 'destinatario' => $destinatario
                     , 'direccion_entrega' => $direccion_entrega
                     , 'fecha_estimada' => $solicitudEnvio->fecha_entrega_estimada
+                    , 'asignada_a_ruta' => RutaTransporte::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
+                ];                
+            });
+
+        return view('SolicitudEnvioAceptada.index', compact('solicitudesEnvioAceptadas'));
+    }
+
+    public function route($id) 
+    {
+        $rutasTransporte = RutaTransporte::all()
+            ->reject(function ($rutaTransporte, $key) {
+                return !UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first()->disponible;
+            })
+            ->unique('id_unidad_transporte')
+            ->map(function ($rutaTransporte, $key) {
+                $conductor = Usuario::where('id', $rutaTransporte->id_conductor)->first();
+                $vehiculo = UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first();
+                return [
+                      'id' => $rutaTransporte->id
+                    , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
+                    , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
+                    //, 'envios_asignados' => $
                 ];
             });
 
-        return view('SolicitudEnvio.index', compact('solicitudesEnvio'));
+        return view('SolicitudEnvioAceptada.route', compact('rutasTransporte'));
     }
 
-    public function accept($id)
+    public function report($id)
     {
-        $solicitudEnvioAcepta = new SolicitudEnvioAceptada;
-
-        $solicitudEnvioAcepta->id_solicitud_envio = $id;
-        $solicitudEnvioAcepta->cantidad_productos = ProductoComprado::where('id', SolicitudEnvio::where('id', $id)->first()->id_producto_comprado)->first()->cantidad;
-        $solicitudEnvioAcepta->id_usuario_que_acepta = Auth::user()->id;
-        $solicitudEnvioAcepta->save();
-
         return $this->index();
-    }
-
-    public function reject($id) 
-    {
-        
     }
 
     /**

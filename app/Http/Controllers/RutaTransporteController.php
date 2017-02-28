@@ -3,16 +3,18 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \TiendaUniformes\Conductor;
+use \TiendaUniformes\RutaTransporte;
+use \TiendaUniformes\UnidadTransporte;
 use \TiendaUniformes\SolicitudEnvio;
+use \TiendaUniformes\ProductoComprado;
 use \TiendaUniformes\SolicitudEnvioAceptada;
 use \TiendaUniformes\SolicitudEnvioRechazada;
-use \TiendaUniformes\ProductoComprado;
+use \TiendaUniformes\Direccion;
 use \TiendaUniformes\Producto;
 use \TiendaUniformes\Usuario;
-use \TiendaUniformes\Direccion;
-use Auth;
 
-class SolicitudEnvioController extends Controller
+class RutaTransporteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +23,38 @@ class SolicitudEnvioController extends Controller
      */
     public function index()
     {
-        // TO-DO: reemplazar al terminar las relaciones entre modelos.
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        $conductores = Conductor::all()
+            ->reject(function ($conductor, $key) {
+                return RutaTransporte::where('id_conductor', $conductor->id)->
+                    get()->filter(function ($rutaTransporte, $key) {
+                        return $rutaTransporte->noCompletada();
+                    })->count() > 0;
+            })
+            ->map(function ($conductor, $key) {
+                return ['id' => $conductor->id, 'nombre' => $conductor->nombre . ' ' . $conductor->apellido];
+            });
+
+        $unidadesTransporte = UnidadTransporte::all()
+            ->reject(function ($unidadTransporte, $key) {
+                return RutaTransporte::where('id_unidad_transporte', $unidadTransporte->id)->
+                    get()->filter(function ($rutaTransporte, $key) {
+                        return $rutaTransporte->noCompletada();
+                    })->count() > 0;
+            })
+            ->map(function ($unidadTransporte, $key) {
+                return ['id' => $unidadTransporte->id, 'nombre' => $unidadTransporte->marca . ' ' . $unidadTransporte->modelo];
+            });
+
         $solicitudesEnvio = SolicitudEnvio::all()
             ->reject(function ($solicitudEnvio, $key) {
                 return SolicitudEnvioAceptada::where('id', $solicitudEnvio->id)->count() > 0 || SolicitudEnvioRechazada::where('id', $solicitudEnvio->id)->count() > 0;
@@ -39,41 +72,18 @@ class SolicitudEnvioController extends Controller
 
                 return [
                       'id' => $solicitudEnvio->id
-                    , 'descripcion' => $descripcion
-                    , 'destinatario' => $destinatario
-                    , 'direccion_entrega' => $direccion_entrega
-                    , 'fecha_estimada' => $solicitudEnvio->fecha_entrega_estimada
+                    , 'descripcion' => $destinatario . ' - ' . $direccion_entrega . ' - ' 
+                        . $solicitudEnvio->distancia_destino . ' Km - ' 
+                        . $solicitudEnvio->fecha_entrega_estimada
                 ];
             });
 
-        return view('SolicitudEnvio.index', compact('solicitudesEnvio'));
-    }
+        $objetosDisponibles = [
+              'conductores' => $conductores
+            , 'unidadesTransporte' => $unidadesTransporte
+            , 'solicitudesEnvio' => $solicitudesEnvio];
 
-    public function accept($id)
-    {
-        $solicitudEnvioAcepta = new SolicitudEnvioAceptada;
-
-        $solicitudEnvioAcepta->id_solicitud_envio = $id;
-        $solicitudEnvioAcepta->cantidad_productos = ProductoComprado::where('id', SolicitudEnvio::where('id', $id)->first()->id_producto_comprado)->first()->cantidad;
-        $solicitudEnvioAcepta->id_usuario_que_acepta = Auth::user()->id;
-        $solicitudEnvioAcepta->save();
-
-        return $this->index();
-    }
-
-    public function reject($id) 
-    {
-        
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return view('RutaTransporte.create', compact('objetosDisponibles'));
     }
 
     /**

@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"Pr",
+				"Producto"
+			],
+			[
+				"Soli",
+				"SolicitudEnvio"
+			],
+			[
+				"conduc",
+				"conductores"
+			],
+			[
+				"condu",
+				"conductores"
+			],
+			[
+				"id_",
+				"id_solicitud_envio"
+			],
+			[
+				"Envio",
+				"EnvioEntregado"
+			],
+			[
+				"so",
+				"solicitudEnvioAceptada"
+			],
+			[
+				"solici",
+				"solicitudesEnvio"
+			],
+			[
+				"solicitudEnvo",
+				"solicitudEnvioAceptada"
+			],
+			[
+				"Sol",
+				"SolicitudEnvio"
+			],
+			[
+				"id_pro",
+				"id_producto_comprado"
+			],
+			[
+				"Produ",
+				"ProductoComprado"
+			],
+			[
+				"sol",
+				"solicitudEnvioAcepta"
+			],
+			[
+				"Solici",
+				"SolicitudEnvioAceptada"
+			],
+			[
+				"Solic",
+				"SolicitudAceptada"
+			],
+			[
+				"btn-su",
+				"btn-success"
+			],
+			[
+				"dire",
+				"direccion_entrega"
+			],
+			[
+				"con",
+				"contador"
+			],
+			[
+				"tipo",
+				"tipoProducto"
+			],
+			[
 				"fore",
 				"foreign"
 			],
@@ -335,6 +411,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 1441,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/SolicitudEnvioController.php",
+			"settings":
+			{
+				"buffer_size": 3797,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -363,10 +456,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "Git P",
+		"height": 334.0,
+		"last_filter": "Git Push",
 		"selected_items":
 		[
+			[
+				"Git Push",
+				"Git: Push"
+			],
+			[
+				"Git Commit",
+				"Git: Commit"
+			],
+			[
+				"Git Add",
+				"Git: Add All"
+			],
+			[
+				"Git Pul",
+				"Git: Pull"
+			],
 			[
 				"Git P",
 				"Git: Pull"
@@ -378,18 +487,6 @@
 			[
 				"Git Add ",
 				"Git: Add All"
-			],
-			[
-				"Git Push",
-				"Git: Push"
-			],
-			[
-				"Git Add",
-				"Git: Add All"
-			],
-			[
-				"Git Commit",
-				"Git: Commit"
 			],
 			[
 				"Commit",
@@ -512,7 +609,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 432.0
+		"width": 664.0
 	},
 	"console":
 	{
@@ -546,28 +643,77 @@
 		"/D/Programación/Laravel/TiendaUniformes/app",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers",
-		"/D/Programación/Laravel/TiendaUniformes/bootstrap",
 		"/D/Programación/Laravel/TiendaUniformes/database",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations",
-		"/D/Programación/Laravel/TiendaUniformes/public",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds",
 		"/D/Programación/Laravel/TiendaUniformes/resources",
 		"/D/Programación/Laravel/TiendaUniformes/resources/assets",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Usuario",
 		"/D/Programación/Laravel/TiendaUniformes/routes"
 	],
 	"file_history":
 	[
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/route.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_025732_create_rutas_transporte_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/RutaTransporte.php",
+		"/C/Users/Public/Documents/pene.txt",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/ConductorController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_025454_create_unidades_transporte_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaUnidadesTransporteSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Usuario/index.blade.php",
+		"/D/Programación/Laravel/TemaLibre/resources/views/topic/view.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Usuario/create.blade.php",
+		"/D/Programación/Laravel/TemaLibre/app/Http/routes.php",
+		"/D/Programación/Laravel/TemaLibre/resources/views/profile/list.blade.php",
+		"/D/Programación/Laravel/TemaLibre/resources/views/topic/list.blade.php",
+		"/D/Programación/Laravel/TemaLibre/app/Http/Controllers/TopicController.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Producto.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Direccion.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaProductosCompradosSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaSolicitudesEnvioSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaDireccionesSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Factura.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/DatabaseSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaProductosSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/TipoProducto.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaFacturasSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaTipoProductosSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaConductoresSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/BaseDeDatos.sql",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaUsuarioSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Privilegios.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaPrivilegiosSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/UnidadTransporte.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/Controller.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_021144_drop_envios_perdidos_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_02_10_122018_create_privilegio_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts/Administrador.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/public/index.php",
+		"/D/Programación/Laravel/TiendaUniformes/.env",
 		"/C/Users/Miguel Andrés/Desktop/Program.exe",
 		"/D/Programación/Laravel/TiendaUniformes/app/EnvioRecibido.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvio.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/SolicitudEnvioRechazada.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Conductor.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/UnidadTransporte.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/EnvioAsignado.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/EnvioPerdido.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Direccion.php",
-		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225004_create_unidades_transporte_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225003_create_conductores_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225019_create_envios_asignados_table.php",
@@ -584,7 +730,6 @@
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224940_create_ordenes_envio_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225043_create_ordenes_envio_canceladas_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224815_create_solicitud_envio_rechazada_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_02_10_122018_create_privilegio_table.php",
 		"/C/php/php.ini",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
@@ -641,51 +786,7 @@
 		"/C/Users/Miguel Andrés/Desktop/samp037_svr_R2-1-1_win32/gamemodes/grandlarc.pwn",
 		"/D/Programación/SA-MP/MTL/filterscripts/GTA1.pwn",
 		"/C/Users/Miguel Andrés/Desktop/samp037_svr_R2-1-1_win32/gamemodes/mapas.pwn",
-		"/C/Users/Miguel Andrés/Documents/GTA San Andreas User Files/SAMP/chatlog.txt",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/defaultvclasses.xml",
-		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/vsm.edf",
-		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/meta.xml",
-		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT].old/vehiclespawnmanager/spawnpoints.map",
-		"/D/Programación/MTA/server/mods/deathmatch/resources/[PROJECT]/vsm/main.lua",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/timecyc.dat",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/vehicles.ide",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/txdcut.ide",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/surface.dat",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/surfaud.dat",
-		"/C/Program Files (x86)/Rockstar Games/GTA San Andreas/data/timecycp.dat",
-		"/H/WindowsFormsApplication3/WindowsFormsApplication3/FormaVerAsistencia.cs",
-		"/H/Miguel Contreras - TBDD (13-05-2016).sql",
-		"/C/Users/Miguel Andrés/Desktop/StoredProcedures.sql",
-		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/MySQL/consultas.sql",
-		"/C/Users/Miguel Andrés/Desktop/Ejercicios para IV Parcial/dalmaschio/main.cpp",
-		"/D/Programación/C y C++/modelo_III_parcial/main.cpp",
-		"/D/Programación/C y C++/son_filas_iguales_a_columnas/main.cpp",
-		"/C/Users/Miguel Andrés/AppData/Local/Temp/Temp1_DataTables-1.10.12.zip/DataTables-1.10.12/Readme.md",
-		"/C/xampp/mysql/README",
-		"/C/xampp/mysql/bin/my.ini",
-		"/C/Users/Miguel Andrés/Desktop/Adyacencia/Grafo.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Adyacencia/main.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Adyacencia/GestorArchivos.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Adyacencia/MatrizIncidencia.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Adyacencia/MatrizAdyacencia.cpp",
-		"/H/Proyeccion_1_Punto/src/Modelo/PanelDeDibujo.java",
-		"/H/Cuadrado/src/rectangulo/Frame.java",
-		"/H/Cuadrado/src/rectangulo/Panel.java",
-		"/H/Cuadrado/src/rectangulo/Rectangulo.java",
-		"/C/xampp/phpMyAdmin/config.inc.php",
-		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/PostgreSQL/Tablas.sql",
-		"/D/Programación/C#/Circuito/Circuito/GateXor.cs",
-		"/D/Programación/C#/Circuito/Circuito/Insulator.cs",
-		"/D/Programación/C#/Circuito/Circuito/PowerSupply.cs",
-		"/D/Programación/C#/Circuito/Circuito/Program.cs",
-		"/D/Programación/C#/Circuito/Circuito/Conductor.cs",
-		"/C/Users/Miguel Andrés/Desktop/tablas.sql",
-		"/C/Users/Miguel Andrés/Dropbox/TemaLibre/Base de Datos/Tablas.sql",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/D/Programación/C#/Circuito/Circuito/App.config",
-		"/D/Programación/Java/NetBeans/Perspectiva/.gitignore"
+		"/C/Users/Miguel Andrés/Documents/GTA San Andreas User Files/SAMP/chatlog.txt"
 	],
 	"find":
 	{
@@ -704,6 +805,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Auth",
+			"now()->getTimestamp()->format('Y-m-d H:i:s')",
+			"Carbon::now",
+			"All()->",
+			"str_random(7);",
+			"seed",
+			"/public",
 			"$tabe",
 			"table",
 			"EnviosPerdidos",
@@ -824,14 +932,7 @@
 			"asignarVehiculo2",
 			"[posiciones]",
 			"asignarVehiculoEnEstadio",
-			"[players]++;",
-			"estadios[identificador][players]++;",
-			"new num = estadios",
-			"new num =",
-			"asignarVehiculoEnEstadio",
-			"[posiciones]",
-			"obtenerEstadio",
-			"buscarEstadioActual"
+			"[players]++;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -839,6 +940,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"now()",
+			"upper(str_random(7));",
 			"\\\\",
 			"double ",
 			"double",
@@ -891,8 +994,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1313,
+								1313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/SolicitudEnvioController.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1948,
+								623
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -985,7 +1147,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 368.0,
+	"side_bar_width": 431.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
