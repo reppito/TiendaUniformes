@@ -13,6 +13,10 @@ use \TiendaUniformes\SolicitudEnvioRechazada;
 use \TiendaUniformes\Direccion;
 use \TiendaUniformes\Producto;
 use \TiendaUniformes\Usuario;
+use \TiendaUniformes\EnvioEntregado;
+use \TiendaUniformes\EnvioRetornado;
+use \TiendaUniformes\EnvioExtraviado;
+use Auth;
 
 class RutaTransporteController extends Controller
 {
@@ -23,7 +27,26 @@ class RutaTransporteController extends Controller
      */
     public function index()
     {
-        //
+        $rutasTransporte = RutaTransporte::all()
+            ->reject(function ($rutaTransporte, $key) {
+                return !UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first()->disponible;
+            })
+            ->unique('id_unidad_transporte')
+            ->map(function ($rutaTransporte, $key) {
+                $conductor = Conductor::where('id', $rutaTransporte->id_conductor)->first();
+                $vehiculo = UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first();
+                return [
+                      'id' => $rutaTransporte->id
+                    , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
+                    , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
+                    , 'carga' => '0'/*SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
+                        ->reduce(function ($solicitudEnvioAceptada, $acc) {
+                            return $acc + $solicitudEnvioAceptada->cantidad_productos;
+                        })*/
+                ];
+            });
+
+        return view('RutaTransporte.index', compact('rutasTransporte'));
     }
 
     /**
@@ -55,11 +78,17 @@ class RutaTransporteController extends Controller
                 return ['id' => $unidadTransporte->id, 'nombre' => $unidadTransporte->marca . ' ' . $unidadTransporte->modelo];
             });
 
-        $solicitudesEnvio = SolicitudEnvio::all()
-            ->reject(function ($solicitudEnvio, $key) {
-                return SolicitudEnvioAceptada::where('id', $solicitudEnvio->id)->count() > 0 || SolicitudEnvioRechazada::where('id', $solicitudEnvio->id)->count() > 0;
+        $solicitudesEnvioAceptadas = SolicitudEnvioAceptada::all()
+            ->reject(function ($solicitudEnvioAceptada, $key) {
+                return EnvioRetornado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
+                    || EnvioExtraviado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
+                    || EnvioEntregado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
+                    || RutaTransporte::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
+                    ;
             })
-            ->map(function ($solicitudEnvio, $key) {
+            ->map(function ($solicitudEnvioAceptada, $key) {
+                $solicitudEnvio = SolicitudEnvio::where('id', $solicitudEnvioAceptada->id_solicitud_envio)->first();
+
                 $descripcion = Producto::where('id', ProductoComprado::where('id', $solicitudEnvio->id_producto_comprado)->first()->id_producto)->first()->descripcion;
                 
                 $usuarioSolicitante = Usuario::where('id', $solicitudEnvio->id_usuario_solicitante)->first(); 
@@ -70,20 +99,18 @@ class RutaTransporteController extends Controller
 
                 $direccion_entrega = $direccion->calle . ', ' . $direccion->ciudad . ', ' . $direccion->zip_code;
 
-                return [
-                      'id' => $solicitudEnvio->id
-                    , 'descripcion' => $destinatario . ' - ' . $direccion_entrega . ' - ' 
+                return [ 
+                    'id' => $solicitudEnvioAceptada->id, 'descripcion' => $destinatario . ' - ' . $direccion_entrega . ' - ' 
                         . $solicitudEnvio->distancia_destino . ' Km - ' 
                         . $solicitudEnvio->fecha_entrega_estimada
                 ];
             });
 
-        $objetosDisponibles = [
+        return view('RutaTransporte.create', [
               'conductores' => $conductores
             , 'unidadesTransporte' => $unidadesTransporte
-            , 'solicitudesEnvio' => $solicitudesEnvio];
-
-        return view('RutaTransporte.create', compact('objetosDisponibles'));
+            , 'solicitudesEnvioAceptadas' => $solicitudesEnvioAceptadas
+        ]);
     }
 
     /**
@@ -94,7 +121,16 @@ class RutaTransporteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nuevaRuta = new RutaTransporte;
+
+        $nuevaRuta->id_conductor = $request['id_conductor'];
+        $nuevaRuta->id_unidad_transporte = $request['id_unidad_transporte'];
+        $nuevaRuta->id_solicitud_envio_aceptada = $request['id_solicitud_envio_aceptada'];
+        $nuevaRuta->id_usuario_creador = Auth::user()->id;
+
+        $nuevaRuta->save();
+
+        return $this->create();
     }
 
     /**

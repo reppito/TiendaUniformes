@@ -10,7 +10,6 @@
        <th>Correo</th>
        <th>privilegio</th>
      </thead>
-
        @foreach ($usuarios as $usuario )
          <tbody>
          <td>{{$usuario->nombre}}</td>
@@ -20,8 +19,6 @@
          <td>{{$usuario->id_privilegio}}</td>
          </tbody>
        @endforeach
-
-
    </table>
    <div>
 @stop

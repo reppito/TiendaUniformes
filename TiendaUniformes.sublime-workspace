@@ -411,23 +411,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "routes/web.php",
-			"settings":
-			{
-				"buffer_size": 1441,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/SolicitudEnvioController.php",
-			"settings":
-			{
-				"buffer_size": 3797,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -456,21 +439,45 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 334.0,
-		"last_filter": "Git Push",
+		"height": 392.0,
+		"last_filter": "Git Pu",
 		"selected_items":
 		[
+			[
+				"Git Pu",
+				"Git: Pull"
+			],
+			[
+				"Git",
+				"Git: Status"
+			],
+			[
+				"Git Pus",
+				"Git: Push"
+			],
+			[
+				"Git Comm",
+				"Git: Commit"
+			],
+			[
+				"Git Mer",
+				"Git: Merge Branch"
+			],
+			[
+				"Git Fe",
+				"Git: Fetch"
+			],
 			[
 				"Git Push",
 				"Git: Push"
 			],
 			[
-				"Git Commit",
-				"Git: Commit"
-			],
-			[
 				"Git Add",
 				"Git: Add All"
+			],
+			[
+				"Git Commit",
+				"Git: Commit"
 			],
 			[
 				"Git Pul",
@@ -479,10 +486,6 @@
 			[
 				"Git P",
 				"Git: Pull"
-			],
-			[
-				"Git Comm",
-				"Git: Commit"
 			],
 			[
 				"Git Add ",
@@ -507,10 +510,6 @@
 			[
 				"glue ",
 				"Glue - Launch"
-			],
-			[
-				"Git",
-				"Github: Repository"
 			],
 			[
 				"install",
@@ -609,7 +608,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 664.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -659,12 +658,13 @@
 	],
 	"file_history":
 	[
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/route.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_025732_create_rutas_transporte_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/RutaTransporte.php",
 		"/C/Users/Public/Documents/pene.txt",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/ConductorController.php",
@@ -688,7 +688,6 @@
 		"/D/Programación/Laravel/TiendaUniformes/app/Factura.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/DatabaseSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaProductosSeeder.php",
-		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/TipoProducto.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaFacturasSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaTipoProductosSeeder.php",
@@ -994,67 +993,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "routes/web.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1313,
-								1313
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/SolicitudEnvioController.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3797,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1948,
-								623
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

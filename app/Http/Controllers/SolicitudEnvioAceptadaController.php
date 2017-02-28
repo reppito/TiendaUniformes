@@ -15,6 +15,8 @@ use \TiendaUniformes\EnvioExtraviado;
 use \TiendaUniformes\EnvioRetornado;
 use \TiendaUniformes\RutaTransporte;
 use \TiendaUniformes\UnidadTransporte;
+use \TiendaUniformes\Conductor;
+use Auth;
 
 class SolicitudEnvioAceptadaController extends Controller
 {
@@ -63,17 +65,39 @@ class SolicitudEnvioAceptadaController extends Controller
             })
             ->unique('id_unidad_transporte')
             ->map(function ($rutaTransporte, $key) {
-                $conductor = Usuario::where('id', $rutaTransporte->id_conductor)->first();
+                $conductor = Conductor::where('id', $rutaTransporte->id_conductor)->first();
                 $vehiculo = UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first();
                 return [
                       'id' => $rutaTransporte->id
                     , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
                     , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
-                    //, 'envios_asignados' => $
+                    , 'carga' => '0'/*SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
+                        ->reduce(function ($solicitudEnvioAceptada, $acc) {
+                            return $acc + $solicitudEnvioAceptada->cantidad_productos;
+                        })*/
                 ];
             });
 
-        return view('SolicitudEnvioAceptada.route', compact('rutasTransporte'));
+        return view('SolicitudEnvioAceptada.route', [
+              'rutasTransporte' => $rutasTransporte
+            , 'idSolicitudEnvioAceptada' => $id
+        ]);
+    }
+
+    public function assign(Request $request, $id)
+    {
+        $rutaTransporte = RutaTransporte::where('id', $request['id_ruta_transporte'])->first();
+
+        $nuevaRuta = new RutaTransporte;
+
+        $nuevaRuta->id_conductor = $rutaTransporte->id_conductor;
+        $nuevaRuta->id_unidad_transporte = $rutaTransporte->id_unidad_transporte;
+        $nuevaRuta->id_solicitud_envio_aceptada = $id;
+        $nuevaRuta->id_usuario_creador = Auth::user()->id;
+
+        $nuevaRuta->save();
+
+        return $this->index();
     }
 
     public function report($id)
