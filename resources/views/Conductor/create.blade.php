@@ -1,7 +1,7 @@
 @extends('layouts.Administrador')
 @section('content')
 <div class="col-xs-4 col-xs-offset-4">
-  {!!Form::open(['route'=>'conductor.store','method'=>'POST'])!!}
+  {!!Form::open(['route'=>'conductores.store','method'=>'POST'])!!}
   <div class="form-group">
     <div class=" col-xs-offset-4">
       {!!Form::label('REGISTRO DE CONDUCTOR',null,['class'=>'.text-left '])!!}

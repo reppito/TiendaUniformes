@@ -13,8 +13,8 @@
       <th class="text-center">FECHA ESTIMADA</th>
       <th class="text-center"></th>
     </thead>
-    <tbody>
     @foreach ($solicitudesEnvioAceptadas as $solicitudEnvioAceptada)
+    <tbody>
       <td>{{$solicitudEnvioAceptada['id']}}</td>
       <td>{{$solicitudEnvioAceptada['descripcion']}}</td>
       <td>{{$solicitudEnvioAceptada['destinatario']}}</td>
@@ -30,7 +30,7 @@
         @else
         <form action="/solicitudes-envio-aceptadas/{{$solicitudEnvioAceptada['id']}}/report" method="POST">
           {{csrf_field()}}
-          <button id="botonActualizarEstado" type="submit" class="btn btn-block btn-success">Actualizar Estado</button>
+          <button id="botonActualizarEstado" type="submit" class="btn btn-block btn-success">Reportar Entrega</button>
         </form>
         @endif
       </td>

@@ -29,7 +29,9 @@ class SolicitudEnvioAceptadaController extends Controller
     {
         $solicitudesEnvioAceptadas = SolicitudEnvioAceptada::all()
             ->reject(function ($solicitudEnvioAceptada, $key) {
-                return EnvioEntregado::where('id', $solicitudEnvioAceptada->id)->count() > 0 || EnvioExtraviado::where('id', $solicitudEnvioAceptada->id)->count() > 0 || EnvioRetornado::where('id', $solicitudEnvioAceptada->id)->count() > 0;
+                return EnvioEntregado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0 
+                    || EnvioExtraviado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0 
+                    || EnvioRetornado::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0;
             })
             ->map(function ($solicitudEnvioAceptada, $key) {
                 $solicitudEnvio = SolicitudEnvio::where('id', $solicitudEnvioAceptada->id_solicitud_envio)->first();
@@ -102,6 +104,19 @@ class SolicitudEnvioAceptadaController extends Controller
 
     public function report($id)
     {
+        return view('SolicitudEnvioAceptada.report', ['idSolicitudEnvioAceptada' => $id]);
+    }
+
+    public function received(Request $request, $id)
+    {
+        $nuevoEnvioEntregado = new EnvioEntregado;
+
+        $nuevoEnvioEntregado->fecha_reporte_entrega = $request['fecha_reporte_entrega'];
+        $nuevoEnvioEntregado->id_solicitud_envio_aceptada = $id;
+        $nuevoEnvioEntregado->id_usuario_que_reporta = Auth::user()->id;
+
+        $nuevoEnvioEntregado->save();
+
         return $this->index();
     }
 

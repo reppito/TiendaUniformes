@@ -14,8 +14,8 @@
       <th class="text-center"></th>
       <!--<th class="text-center"></th>-->
     </thead>
-    <tbody>
     @foreach ($solicitudesEnvio as $solicitudEnvio)
+    <tbody>
       <td>{{$solicitudEnvio['id']}}</td>
       <td>{{$solicitudEnvio['descripcion']}}</td>
       <td>{{$solicitudEnvio['destinatario']}}</td>
