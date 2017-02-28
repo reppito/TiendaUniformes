@@ -3,31 +3,17 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use Auth;
-use Session;
-use Redirect;
-
-class UsuarioController extends Controller
+class carrito extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-     public function ingresar(){
-       if(Auth::check())
-        return view('Tienda.index');
-       return view('Usuario.login');
-     }
-
-
-
     public function index()
     {
-        $usuarios= \TiendaUniformes\Usuario::all();
-        return view('Usuario.index',compact('usuarios'));
+        //
     }
 
     /**
@@ -37,7 +23,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('Usuario.create');
+        //
     }
 
     /**
@@ -48,15 +34,12 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-         \TiendaUniformes\Usuario::create([
-           'nombre' => $request['nombre']
-           ,'apellido'=> $request['apellido']
-           ,'cedula' => $request['cedula']
-           ,'email'  => $request['email']
-           ,'password' => bcrypt($request['password'])
-           , 'id_privilegio'=> '1'
-         ]);
-         return "usuario registrado";
+       \TiendaUniformes\Carrito::create([
+         'id_user' => Auth::user()->id,
+         'id_producto' => $request['producto'],
+         'cantidad' =>  $request['cantidad']
+       ]);
+        return redirect('tienda');
     }
 
     /**

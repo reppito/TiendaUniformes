@@ -3,31 +3,23 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use Auth;
-use Session;
-use Redirect;
-
-class UsuarioController extends Controller
+use Carbon\Carbon;
+class TiendaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+     public function addCarrito($id)
+     {
 
-     public function ingresar(){
-       if(Auth::check())
-        return view('Tienda.index');
-       return view('Usuario.login');
+       return "entre aqui";
      }
 
-
-
     public function index()
-    {
-        $usuarios= \TiendaUniformes\Usuario::all();
-        return view('Usuario.index',compact('usuarios'));
+    {  $productos=\TiendaUniformes\Producto::all();
+        return view('Tienda.index',compact('productos'));
     }
 
     /**
@@ -37,7 +29,8 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('Usuario.create');
+       $tipo_productos= \TiendaUniformes\TipoProducto::pluck('nombre_producto','id');
+        return view('Tienda.create',compact('tipo_productos'));
     }
 
     /**
@@ -48,15 +41,16 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-         \TiendaUniformes\Usuario::create([
-           'nombre' => $request['nombre']
-           ,'apellido'=> $request['apellido']
-           ,'cedula' => $request['cedula']
-           ,'email'  => $request['email']
-           ,'password' => bcrypt($request['password'])
-           , 'id_privilegio'=> '1'
-         ]);
-         return "usuario registrado";
+        $producto= $request->file('path');
+        \TiendaUniformes\Producto::create([
+          'descripcion' => $request['descripcion']
+          ,'id_tipo'=> $request['id_tipo']
+          ,'disponibles' => $request['disponibles']
+          ,'precio'  => $request['precio']
+          ,'path' => Carbon::now()->second.$producto->getClientOriginalName()
+
+          ]);
+          \Storage::disk('local')->put(Carbon::now()->second.$producto->getClientOriginalName(),  \File::get($producto));
     }
 
     /**
@@ -66,8 +60,8 @@ class UsuarioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {    $producto= \TiendaUniformes\Producto::find($id);
+        return view ('tienda.addCarrito',compact('producto'));
     }
 
     /**
@@ -103,4 +97,5 @@ class UsuarioController extends Controller
     {
         //
     }
+
 }
