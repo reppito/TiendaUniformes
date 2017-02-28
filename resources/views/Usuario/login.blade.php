@@ -1,11 +1,11 @@
 @extends('layouts.principal')
 @section('content')
-
+@include('alert')
   {!!Form::open(['route'=>'login.store','method'=>'POST'])!!}
 
   <div class=" col-xs-4 col-xs-offset-4 form-group">
     <div class="  col-xs-offset-4">
-      {!!Form::label('REGISTRO DE USUARIO',null,['class'=>'.text-left '])!!}
+      {!!Form::label('Inicio de sesion',null,['class'=>'.text-left '])!!}
     </div>
 
     <br>

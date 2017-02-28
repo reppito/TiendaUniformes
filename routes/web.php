@@ -10,8 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'principal@index');
+Route::get('/',function(){
+    return Redirect::route('tienda.index');
+});
+Route::resource('carrito','carrito');
+Route::resource('tienda', 'TiendaController');
 
 //rutas controladorUsuario
 Route::get('usuario/ingresar', 'UsuarioController@ingresar');

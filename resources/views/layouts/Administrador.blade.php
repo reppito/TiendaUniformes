@@ -41,7 +41,7 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 
 			<!--logo and iconic logo start-->
 			<div class="logo">
-				<h1><a href="index.html">Tienda<span>Uniformes</span></a></h1>
+				<h1><a href="{{URL::to('/')}}">Tienda<span>Uniformes</span></a></h1>
 			</div>
 			<div class="logo-icon text-center">
 				<a href="{{URL::to('/')}}"><i class="glyphicon glyphicon-home"></i> </a>
