@@ -15,7 +15,8 @@ Route::get('/',function(){
 });
 Route::resource('carrito','carrito');
 Route::resource('tienda', 'TiendaController');
-
+//direcciones direcciones
+Route::resource('direccion','DireccionesController');
 //rutas controladorUsuario
 Route::get('usuario/ingresar', 'UsuarioController@ingresar');
 

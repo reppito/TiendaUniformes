@@ -73,10 +73,8 @@ class SolicitudEnvioAceptadaController extends Controller
                       'id' => $rutaTransporte->id
                     , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
                     , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
-                    , 'carga' => '0'/*SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
-                        ->reduce(function ($solicitudEnvioAceptada, $acc) {
-                            return $acc + $solicitudEnvioAceptada->cantidad_productos;
-                        })*/
+                    , 'carga' => SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
+                        ->sum('cantidad_productos')
                 ];
             });
 

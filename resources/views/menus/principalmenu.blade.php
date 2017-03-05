@@ -1,7 +1,7 @@
 <nav class="cl-effect-13" id="cl-effect-13">
 					<ul class="res">
 						@if (Auth::check())
-						<li><a href="{{URL::to('direccion')}}">Bienvenido {!!Auth::user()->nombre!!}</a></li>
+						<li><a href="{{URL::to('tienda')}}">Bienvenido {!!Auth::user()->nombre!!}</a></li>
 							@endif
 						<li><a href="{!! asset('/') !!}">principal <span class="glyphicon glyphicon-user"></span></a></li>
 						<li><a href="about.html">nosotros <span class="	glyphicon glyphicon-phone-alt"></span><span></span></a></li>
