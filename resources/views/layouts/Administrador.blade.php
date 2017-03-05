@@ -79,8 +79,12 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 			</div>
 		<!-- //header-ends -->
 			<div id="page-wrapper">
+			@if(Auth::check())
         @include('alert')
 			   @yield('content')
+			   @else
+			   	{{!!redirect('/')!!}}
+			   	@endif
 				</div>
 			<!--body wrapper start-->
 			</div>

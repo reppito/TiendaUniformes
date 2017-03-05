@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call(TablaUnidadesTransporteSeeder::class);
         $this->call(TablaTipoProductosSeeder::class);
         $this->call(TablaProductosSeeder::class);
+        $this->call(TablaDireccionesSeeder::class);
         $this->call(TablaFacturasSeeder::class);
         $this->call(TablaProductosCompradosSeeder::class);
-        $this->call(TablaDireccionesSeeder::class);
         $this->call(TablaSolicitudesEnvioSeeder::class);
     }
 }

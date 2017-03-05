@@ -17,7 +17,7 @@
 
   {!!Form::number('precio',null,['class'=>'form-control','placeholder'=>'Precio por unidad'])!!}
   <br>
-  {!!Form::number('disponibles',null,['class'=>'form-control','placeholder'=>'Precio por unidad'])!!}
+  {!!Form::number('disponibles',null,['class'=>'form-control','placeholder'=>'Unidades disponibles'])!!}
   <br>
   {!!Form::label('Elija que tipo de producto es')!!}
   {!!Form::select('id_tipo',$tipo_productos)!!}

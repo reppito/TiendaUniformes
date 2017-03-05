@@ -16,9 +16,11 @@ class LogController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function logout(){
+
        Auth::logout();
-       return Redirect::to('/');
+       return redirect('tienda');
      }
+
     public function index()
     {
         //
@@ -42,10 +44,12 @@ class LogController extends Controller
      */
     public function store(LogRequest $request)
     {
+        
         if (Auth::attempt(['email'=> $request['email'],'password'=> $request['contrasena']])) {
           return Redirect::to('/');
         }
         return "datos incorrectos intente de nuevo";
+
     }
 
     /**

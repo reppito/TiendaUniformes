@@ -16,12 +16,14 @@ class TablaFacturasSeeder extends Seeder
     	foreach (Usuario::all() as $usuario) {
 	    	DB::table('facturas')->insert([
 	        	  'id_usuario' => $usuario->id
+                 , 'id_dir' => '1'
 	            , 'created_at' => Carbon::now()
 	            , 'updated_at' => Carbon::now()
 	        ]);
 
 	    	DB::table('facturas')->insert([
 	        	  'id_usuario' => $usuario->id
+	        	 , 'id_dir' => '1'
 	            , 'created_at' => Carbon::now()
 	            , 'updated_at' => Carbon::now()
 	        ]);	        

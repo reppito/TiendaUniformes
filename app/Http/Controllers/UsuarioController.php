@@ -17,17 +17,22 @@ class UsuarioController extends Controller
      */
 
      public function ingresar(){
-       if(Auth::check())
-        return view('Tienda.index');
+
+       if(Auth::check()){
+        $productos= \TiendaUniformes\Producto::all();
+        return view('Tienda.index',compact('productos'));
+    }
        return view('Usuario.login');
      }
 
 
 
     public function index()
-    {
+    {  if(Auth::check()){
         $usuarios= \TiendaUniformes\Usuario::all();
         return view('Usuario.index',compact('usuarios'));
+        }    
+        else return redirect('tienda');
     }
 
     /**

@@ -23,6 +23,9 @@ Route::resource('usuario','UsuarioController');
 Route::get('logout','LogController@logout');
 Route::resource('login','LogController');
 
+//FacturaController
+Route::resource('factura','FacturaController');
+Route::post('factura/direccion','Facturacontroller@crear')->name('factura.crear');
 
 // Rutas de Miguel
 Route::resource('conductores', 'ConductorController');

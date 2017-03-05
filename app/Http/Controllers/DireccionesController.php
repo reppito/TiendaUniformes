@@ -3,24 +3,25 @@
 namespace TiendaUniformes\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Carbon\Carbon;
+
 use Auth;
-class TiendaController extends Controller
+
+class DireccionesController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-     public function addCarrito($id)
-     {
-
-       return "entre aqui";
-     }
-
     public function index()
-    {  $productos=\TiendaUniformes\Producto::all();
-        return view('Tienda.index',compact('productos'));
+    {
+      if (Auth::check()) {
+        $direcciones= \TiendaUniformes\Direccion::where('id_user',Auth::user()->id)->get();
+        return view('Direcciones.index',compact('direcciones'));
+      }
+
+
+        return redirect('tienda');
     }
 
     /**
@@ -30,10 +31,9 @@ class TiendaController extends Controller
      */
     public function create()
     {
-        if(Auth::check()){
-       $tipo_productos= \TiendaUniformes\TipoProducto::pluck('nombre_producto','id');
-        return view('Tienda.create',compact('tipo_productos'));
-        }
+        if (Auth::check()) {
+        return view('Direcciones.create');
+            }
         else return redirect('tienda');
     }
 
@@ -45,18 +45,20 @@ class TiendaController extends Controller
      */
     public function store(Request $request)
     {
-        $producto= $request->file('path');
-        \TiendaUniformes\Producto::create([
-          'descripcion' => $request['descripcion']
-          ,'id_tipo'=> $request['id_tipo']
-          ,'disponibles' => $request['disponibles']
-          ,'precio'  => $request['precio']
-          ,'path' => Carbon::now()->second.$producto->getClientOriginalName()
-
-          ]);
-          \Storage::disk('local')->put(Carbon::now()->second.$producto->getClientOriginalName(),  \File::get($producto));
-          return redirect('tienda');
-      }
+      if(Auth::check()){
+         \TiendaUniformes\Direccion::create([
+           'id_user' => Auth::user()->id
+           ,'ciudad'=> $request['ciudad']
+           ,'estado'=> $request['estado']
+           ,'calle'=> $request['calle']
+           ,'detalles'=> $request['detalles']
+           ,'zip_code'=> $request['zip_code']
+         ]);
+         return redirect('/');
+       }
+         else
+         return redirect('/');
+    }
 
     /**
      * Display the specified resource.
@@ -65,8 +67,8 @@ class TiendaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {    $producto= \TiendaUniformes\Producto::find($id);
-        return view ('tienda.addCarrito',compact('producto'));
+    {
+        //
     }
 
     /**
@@ -100,7 +102,6 @@ class TiendaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
-
 }

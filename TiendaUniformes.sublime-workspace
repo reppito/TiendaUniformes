@@ -467,10 +467,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 150.0,
-		"last_filter": "Git Push",
+		"height": 81.0,
+		"last_filter": "Set SQL",
 		"selected_items":
 		[
+			[
+				"Set SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"Git Pu",
+				"Git: Push"
+			],
+			[
+				"Git Comm",
+				"Git: Commit"
+			],
+			[
+				"Git Add",
+				"Git: Add All"
+			],
 			[
 				"Git Push",
 				"Git: Push"
@@ -490,18 +506,6 @@
 			[
 				"Git Ad",
 				"Git: Add All"
-			],
-			[
-				"Git Comm",
-				"Git: Commit"
-			],
-			[
-				"Git Add",
-				"Git: Add All"
-			],
-			[
-				"Git Pu",
-				"Git: Pull"
 			],
 			[
 				"Git",
@@ -697,6 +701,34 @@
 	],
 	"file_history":
 	[
+		"/D/Programación/C y C++/gauss-seidel/main.cpp",
+		"/D/Programación/C y C++/gauss-seidel/GaussSeidel.cpp",
+		"/D/Programación/C y C++/gauss-seidel/Matriz.cpp",
+		"/D/Programación/C y C++/gauss-seidel/GaussSeidel.h",
+		"/D/Programación/C y C++/gauss-seidel/Matriz.h",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Procesos/ControladorOcurrencias/ControladorEstadoPartido.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/Modelo.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/TicTacToe.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/MainActivity.cs",
+		"/D/Programación/C#/ClaseBaseDatos-01042016/FormaVerAsistencia.cs",
+		"/D/Programación/C#/ClaseBaseDatos/TODO.txt",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-03)/LayoutsPersonalizados/CircleLayout.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-03)/LayoutsPersonalizados/MainActivity.cs",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/ListadoJugadores.axml",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/Main.axml",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/MenuPrincipal.axml",
+		"/D/Programación/Xamarin/Computación Móvil (2017-01-23)/TallerControlesPersonalizados/MainActivity.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2017-01-23)/TallerControlesPersonalizados/KnobView.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-03)/LayoutsPersonalizados/VistaColor.cs",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/Resource.Designer.cs",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/IniciarPartido.axml",
+		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/Minutero.axml",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/PruebaRejilla/dist/README.TXT",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra.java",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra1.java",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/NodoAstar.java",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Deap.java",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/report.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/EnvioEntregadoController.php",
 		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/index.blade.php",
@@ -705,7 +737,6 @@
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/report.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/public/js/bootstrap.min.js",
 		"/D/Programación/Laravel/TiendaUniformes/public/css/bootstrap.css",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
@@ -797,34 +828,7 @@
 		"/D/Programación/C y C++/tabla-hash/main.cpp",
 		"/D/Programación/C y C++/tabla-hash/X.h",
 		"/D/Programación/C y C++/tabla-hash/X.cpp",
-		"/D/Programación/C y C++/tabla-hash/TablaHash.h",
-		"/D/Programación/C y C++/tabla-hash/TablaHash.cpp",
-		"/D/Programación/C y C++/ahorcado/main.cpp",
-		"/D/Programación/C y C++/formas/main.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Proyectil.java",
-		"/D/Programación/C y C++/abecedario.cpp",
-		"/D/Programación/C y C++/figura.cpp",
-		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/meta.xml",
-		"/D/Programación/SA-MP/MTL/gamemodes/mtl_c.pwn",
-		"/D/Programación/SA-MP/MTL/server.cfg",
-		"/D/Programación/SA-MP/MTL/gamemodes/MTL_C2.pwn",
-		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/rx.lua",
-		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/resources/[gamemodes]/[tdm]/risenbodies/test.lua",
-		"/C/Program Files (x86)/MTA San Andreas 1.5/server/mods/deathmatch/mtaserver.conf",
-		"/C/ProgramData/Microsoft/Windows/Start Menu/Programs/MTA San Andreas 1.5/MTA San Andreas.lnk",
-		"/D/Programación/C y C++/ejercicio-tedd-2/ejercicio-tedd-2/main.cpp",
-		"/D/Programación/C y C++/ejercicio-tedd-1/ejercicio-tedd-1/main.cpp",
-		"/C/Users/Miguel Andrés/Desktop/Volumen Movil.rar",
-		"/C/Users/Miguel Andrés/Desktop/Volumen.cs",
-		"/C/Users/Miguel Andrés/Desktop/KnobView.cs",
-		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/Resources/layout/Main.axml",
-		"/D/Programación/Xamarin/Computación Móvil (2017-01-21)/TallerControlesPersonalizados/MainActivity.cs",
-		"/D/Programación/Java/NetBeans/GuerraAeronaves/core/assets/mapas/mapa2.txt",
-		"/D/Programación/Java/NetBeans/GuerraAeronaves/core/assets/mapas/mapa1.txt",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Microsoft/Windows/Recent/MTL_C2.pwn.lnk",
-		"/D/Programación/SA-MP/MTL/gamemodes/CantidadJugadoresPorJuegos.pwn",
-		"/D/Programación/SA-MP/MTL/server_log.txt",
-		"/D/Programación/SA-MP/MTL/pawno/include/pointers.inc"
+		"/D/Programación/C y C++/tabla-hash/TablaHash.h"
 	],
 	"find":
 	{
@@ -843,6 +847,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"<date",
 			"foreach",
 			"solicitudEnvioEntregada",
 			"solicitudesEnvioEntregadas",
@@ -969,8 +974,7 @@
 			"Barra[",
 			"Barra",
 			"new Barra",
-			"actualizarDerby",
-			"ESTADIO_ENJUEGO"
+			"actualizarDerby"
 		],
 		"highlight": true,
 		"in_selection": false,

@@ -5,28 +5,39 @@ namespace TiendaUniformes\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\DB;
-class carrito extends Controller
+use TiendaUniformes\Factura;
+class FacturaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {  
-        if(Auth::check())
-      {
-        $user= Auth::id();
-        $carritos=   DB::table('carritos')
-            ->join( 'productos','carritos.id_producto', '=', 'productos.id')
-            ->where('carritos.id_user', $user)
-            ->select('carritos.cantidad', 'carritos.id','productos.precio','productos.path')->get();
-            $pago=0;
-            foreach ($carritos as $carrito) {
-             $pago=$pago+($carrito->cantidad*$carrito->precio);
-            }
-        return view('carrito.index',compact(['carritos','pago']));
+     public function crear(Request $request)
+     {
 
+       $direccion= $request->direccion;
+       if(Auth::check()){
+          $carritos=   DB::table('carritos')
+           ->join( 'productos','carritos.id_producto', '=', 'productos.id')
+           ->where('carritos.id_user', Auth::user()->id)
+           ->select('carritos.cantidad', 'carritos.id','productos.precio','productos.path')->get();
+           $pago=0;
+           foreach ($carritos as $carrito) {
+            $pago=$pago+($carrito->cantidad*$carrito->precio);
+           }
+
+       return view('factura.store',compact(['direccion','pago']));
+
+     }
+     else return redirect('tienda');
+
+     }
+    public function index()
+    {
+      if (Auth::check()) {
+        $direcciones= \TiendaUniformes\Direccion::where('id_user',Auth::user()->id)->get();
+        return view('factura.index',compact('direcciones'));
       }
       else return redirect('tienda');
     }
@@ -49,16 +60,24 @@ class carrito extends Controller
      */
     public function store(Request $request)
     {
-          if(Auth::check())
-      {
-       \TiendaUniformes\Carrito::create([
-         'id_user' => Auth::user()->id,
-         'id_producto' => $request['producto'],
-         'cantidad' =>  $request['cantidad']
-       ]);
+        if (Auth::check()){
+        Factura::create([
+          'id_usuario'=> Auth::user()->id,
+          'id_dir'  => $request->direccion
+          ]);
+
+        $factura= Factura::where('id_usuario','=',Auth::user()->id)->orderby('created_at','DESC')->get();
+
+       \TiendaUniformes\Pago::create([
+          'id_factura' => $factura[0]->id
+          ,'cantidad_pagar'=> $request->pago
+          ,'referencia_bancaria'=> $request->referencia_bancaria
+          ,'aprobacion_pago' => '0'
+
+        ]);
+     }
         return redirect('tienda');
-        }
-        else return redirect('tienda');
+        // 
     }
 
     /**
@@ -103,8 +122,6 @@ class carrito extends Controller
      */
     public function destroy($id)
     {
-       \TiendaUniformes\Carrito::destroy($id);
-       return redirect('/carrito');
         //
     }
 }

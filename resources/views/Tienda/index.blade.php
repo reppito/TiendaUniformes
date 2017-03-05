@@ -19,10 +19,13 @@
     <td>{{$producto->precio}}</td>
     <td>{{$producto->disponibles}}</td>
     <td><img src="productos/{{$producto->path}}" alt="" style="width:100px;"></td>
-    {!!Form::open(['route'=>['carrito.store','producto'=>$producto->id,],'method'=>'POST'])!!}
-      <td>{!!Form::selectRange('cantidad', 1, $producto->disponibles) !!}</td>
-      <td>{{ Form::button('Agregar Al Carrito ',['class'=>"btn btn-primary btn-block", 'type'=>'submit']) }}</td>
-    {!!Form::close()!!}
+    @if (Auth::check())
+      {!!Form::open(['route'=>['carrito.store','producto'=>$producto->id,],'method'=>'POST'])!!}
+        <td>{!!Form::selectRange('cantidad', 1, $producto->disponibles) !!}</td>
+        <td>{{ Form::button('Agregar Al Carrito ',['class'=>"btn btn-primary btn-block", 'type'=>'submit']) }}</td>
+      {!!Form::close()!!}
+    @endif
+
 
 
 
