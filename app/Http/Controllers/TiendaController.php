@@ -12,11 +12,27 @@ class TiendaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function aprobarPagos(){
+
+       $pagos= \TiendaUniformes\Pago::where('aprobacion_pago',0)->get();
+
+      return view('Tienda.aprobarPagos',compact('pagos'));
+
+
+     }
      public function addCarrito($id)
      {
 
        return "entre aqui";
      }
+     public function pagoAprobado(Request $id)
+     {  $pagoAprobado=\TiendaUniformes\Pago::find($id->pago);
+        $pagoAprobado->aprobacion_pago=1;
+        $pagoAprobado->save();
+      
+        return redirect('tienda/aprobarPagos');
+     }
+
 
     public function index()
     {  $productos=\TiendaUniformes\Producto::all();
@@ -54,6 +70,7 @@ class TiendaController extends Controller
           ,'path' => Carbon::now()->second.$producto->getClientOriginalName()
 
           ]);
+
           \Storage::disk('local')->put(Carbon::now()->second.$producto->getClientOriginalName(),  \File::get($producto));
           return redirect('tienda');
       }
@@ -65,8 +82,7 @@ class TiendaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {    $producto= \TiendaUniformes\Producto::find($id);
-        return view ('tienda.addCarrito',compact('producto'));
+    {
     }
 
     /**

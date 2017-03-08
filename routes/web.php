@@ -14,7 +14,10 @@ Route::get('/',function(){
     return Redirect::route('tienda.index');
 });
 Route::resource('carrito','carrito');
+Route::get('tienda/aprobarPagos','TiendaController@aprobarPagos');
+Route::put('tienda/pagoAprobado', 'TiendaController@pagoAprobado')->name('Tienda.pagoAprobado');
 Route::resource('tienda', 'TiendaController');
+
 //direcciones direcciones
 Route::resource('direccion','DireccionesController');
 //rutas controladorUsuario

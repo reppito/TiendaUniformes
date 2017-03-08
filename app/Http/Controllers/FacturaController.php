@@ -75,9 +75,31 @@ class FacturaController extends Controller
           ,'aprobacion_pago' => '0'
 
         ]);
+
+        $carrito= \TiendaUniformes\Carrito::where('id_user',$factura[0]->id_usuario)->get();
+        foreach ($carrito as $car) {
+          \TiendaUniformes\ProductoComprado::create([
+            'id_factura' => $factura[0]->id
+            ,'id_producto'=> $car->id_producto
+            , 'cantidad' => $car->cantidad
+            ]);
+            $cantidad=0;
+          $producto= \TiendaUniformes\Producto::find($car->id_producto);
+
+          $producto->disponibles= $producto->disponibles- $car->cantidad;
+          $cantidad= $producto->disponibles;
+          $producto->save();
+
+          $carroeliminados= \TiendaUniformes\carrito::where('cantidad','<', $cantidad)->
+                                                      where('id_producto',$car->id_producto)->delete();
+
+
+        }
+        \TiendaUniformes\Carrito::where('id_user',$factura[0]->id_usuario)->delete();
+
      }
         return redirect('tienda');
-        // 
+        //
     }
 
     /**
