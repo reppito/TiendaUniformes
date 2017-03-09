@@ -36,6 +36,10 @@
         @endforeach
       </select>
     </div>
+    <div class="form-group">
+      <label for="fecha_entrega_estimada"><b>Fecha estimada de entrega: </b></label>
+      <input type="date" name="fecha_entrega_estimada" class="date datepicker"/>
+    </div>
     <button type="submit" class="col-md-offset-4 col-md-4 btn btn-success">Crear</button>
   </form>
   @endif

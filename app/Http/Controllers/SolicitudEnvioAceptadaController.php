@@ -86,18 +86,28 @@ class SolicitudEnvioAceptadaController extends Controller
 
     public function assign(Request $request, $id)
     {
-        $rutaTransporte = RutaTransporte::where('id', $request['id_ruta_transporte'])->first();
+        if (!$request['fecha_estimada_entrega']) {
+            return 'Debe indicar la fecha en que se espera que sea entregado el producto.';
+        }
+        else {
+            $rutaTransporte = RutaTransporte::where('id', $request['id_ruta_transporte'])->first();
 
-        $nuevaRuta = new RutaTransporte;
+            $nuevaRuta = new RutaTransporte;
 
-        $nuevaRuta->id_conductor = $rutaTransporte->id_conductor;
-        $nuevaRuta->id_unidad_transporte = $rutaTransporte->id_unidad_transporte;
-        $nuevaRuta->id_solicitud_envio_aceptada = $id;
-        $nuevaRuta->id_usuario_creador = Auth::user()->id;
+            $nuevaRuta->id_conductor = $rutaTransporte->id_conductor;
+            $nuevaRuta->id_unidad_transporte = $rutaTransporte->id_unidad_transporte;
+            $nuevaRuta->id_solicitud_envio_aceptada = $id;
+            $nuevaRuta->id_usuario_creador = Auth::user()->id;
 
-        $nuevaRuta->save();
+            $nuevaRuta->save();
 
-        return $this->index();
+            $solicitudEnvio = SolicitudEnvio::all()->where('id', SolicitudEnvioAceptada::all()->where('id', $id)->first()->id_solicitud_envio)->first();
+
+            $solicitudEnvio->fecha_entrega_estimada = $request['fecha_estimada_entrega'];
+            $solicitudEnvio->save();
+
+            return $this->index(); 
+        }
     }
 
     public function report($id)

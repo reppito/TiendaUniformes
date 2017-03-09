@@ -118,16 +118,26 @@ class RutaTransporteController extends Controller
      */
     public function store(Request $request)
     {
-        $nuevaRuta = new RutaTransporte;
+        if (!$request['fecha_entrega_estimada']) {
+            return 'Debe indicar la fecha en que se espera que sea entregado el producto.';
+        }
+        else {
+            $nuevaRuta = new RutaTransporte;
 
-        $nuevaRuta->id_conductor = $request['id_conductor'];
-        $nuevaRuta->id_unidad_transporte = $request['id_unidad_transporte'];
-        $nuevaRuta->id_solicitud_envio_aceptada = $request['id_solicitud_envio_aceptada'];
-        $nuevaRuta->id_usuario_creador = Auth::user()->id;
+            $nuevaRuta->id_conductor = $request['id_conductor'];
+            $nuevaRuta->id_unidad_transporte = $request['id_unidad_transporte'];
+            $nuevaRuta->id_solicitud_envio_aceptada = $request['id_solicitud_envio_aceptada'];
+            $nuevaRuta->id_usuario_creador = Auth::user()->id;
 
-        $nuevaRuta->save();
+            $nuevaRuta->save();
 
-        return $this->create();
+            $solicitudEnvio = SolicitudEnvio::all()->where('id', SolicitudEnvioAceptada::all()->where('id', $request['id_solicitud_envio_aceptada'])->first()->id_solicitud_envio)->first();
+
+            $solicitudEnvio->fecha_entrega_estimada = $request['fecha_entrega_estimada'];
+            $solicitudEnvio->save();        
+
+            return $this->create();
+        }
     }
 
     /**
