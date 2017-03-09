@@ -48,6 +48,8 @@ Route::resource('rutas-transporte', 'RutaTransporteController');
 
 Route::resource('envios-entregados', 'EnvioEntregadoController');
 
+Route::resource('unidades-transporte', 'UnidadTransporteController');
+
 // Rutas de Rafael
 Route::resource('proveedores','ProveedoresController');
 

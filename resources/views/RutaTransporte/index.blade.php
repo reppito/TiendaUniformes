@@ -21,7 +21,7 @@
 			<td>{{ $rutaTransporte['conductor'] }}</td>
 			<td>{{ $rutaTransporte['vehiculo'] }}</td>
 			<td>
-        <form action="/unidades-transporte/{{ $rutaTransporte['idUnidadTransporte'] }}/show" method="GET">
+        <form action="/unidades-transporte/{{ $rutaTransporte['idUnidadTransporte'] }}" method="GET">
           {{csrf_field()}}
           <button type="submit" class="btn btn-success btn-block">Ver</button>
         </form>
