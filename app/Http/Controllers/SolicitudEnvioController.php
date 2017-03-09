@@ -10,6 +10,7 @@ use \TiendaUniformes\ProductoComprado;
 use \TiendaUniformes\Producto;
 use \TiendaUniformes\Usuario;
 use \TiendaUniformes\Direccion;
+Use \TiendaUniformes\Factura;
 use Auth;
 
 class SolicitudEnvioController extends Controller
@@ -73,7 +74,26 @@ class SolicitudEnvioController extends Controller
      */
     public function create()
     {
-        //
+        $productosComprados = ProductoComprado::all()
+            ->filter(function ($productoComprado, $key) {
+                return SolicitudEnvio::where('id_producto_comprado', $productoComprado->id)->count() == 0;
+            })
+            ->map(function ($productoComprado, $key) {
+                
+                $usuarioComprador = Usuario::where('id', Factura::where('id', $productoComprado->id_factura)->first()->id_usuario)->first();
+                $nombreComprador = $usuarioComprador->nombre . ' ' . $usuarioComprador->apellido;
+
+                $descripcionProducto = Producto::where('id', $productoComprado->id_producto)->first()->descripcion;
+
+                return [
+                      'id' => $productoComprado->id
+                    , 'comprador' => $nombreComprador
+                    , 'descripcion' => $descripcionProducto
+                    , 'cantidad' => $productoComprado->cantidad
+                    ];
+            });
+
+        return view('SolicitudEnvio.create', ['productosComprados' => $productosComprados]);
     }
 
     /**
@@ -84,7 +104,25 @@ class SolicitudEnvioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if (!$request['fecha_entrega_estimada']) {
+            return 'Debe indicar la fecha en la que espera que llegue el producto.';
+        }
+        else {
+            $id_direccion_destino = Factura::where('id', ProductoComprado::where('id', $request['id_producto_comprado'])->first()->id_factura)->first()->id_dir;
+            $distancia_destino = 100;
+
+            $nuevaSolicitud = new SolicitudEnvio;
+
+            $nuevaSolicitud->id_producto_comprado = $request['id_producto_comprado'];
+            $nuevaSolicitud->id_direccion_destino = $id_direccion_destino;
+            $nuevaSolicitud->fecha_entrega_estimada = $request['fecha_entrega_estimada'];
+            $nuevaSolicitud->distancia_destino = 100;
+            $nuevaSolicitud->id_usuario_solicitante = Auth::user()->id;
+
+            $nuevaSolicitud->save();
+
+            return $this->create();
+        }
     }
 
     /**

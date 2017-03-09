@@ -39,8 +39,7 @@ class RutaTransporteController extends Controller
                       'id' => $rutaTransporte->id
                     , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
                     , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
-                    , 'carga' => SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
-                        ->sum('cantidad_productos')
+                    , 'idUnidadTransporte' => $vehiculo->id
                 ];
             });
 

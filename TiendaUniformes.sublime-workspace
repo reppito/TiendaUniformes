@@ -439,6 +439,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
+			"settings":
+			{
+				"buffer_size": 378,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -467,17 +476,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 81.0,
-		"last_filter": "Set SQL",
+		"height": 334.0,
+		"last_filter": "Git Push",
 		"selected_items":
 		[
 			[
-				"Set SQL",
-				"Set Syntax: SQL"
+				"Git Push",
+				"Git: Push"
 			],
 			[
-				"Git Pu",
-				"Git: Push"
+				"Git Commit",
+				"Git: Commit"
+			],
+			[
+				"Git AD",
+				"Git: Add All"
 			],
 			[
 				"Git Comm",
@@ -488,7 +501,15 @@
 				"Git: Add All"
 			],
 			[
-				"Git Push",
+				"SET XML",
+				"Set Syntax: XML"
+			],
+			[
+				"Set SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"Git Pu",
 				"Git: Push"
 			],
 			[
@@ -518,10 +539,6 @@
 			[
 				"Git Fe",
 				"Git: Fetch"
-			],
-			[
-				"Git Commit",
-				"Git: Commit"
 			],
 			[
 				"Git Pul",
@@ -652,7 +669,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 432.0
+		"width": 664.0
 	},
 	"console":
 	{
@@ -690,24 +707,50 @@
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds",
 		"/D/Programación/Laravel/TiendaUniformes/resources",
-		"/D/Programación/Laravel/TiendaUniformes/resources/assets",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/EnvioEntregado",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Tienda",
 		"/D/Programación/Laravel/TiendaUniformes/routes"
 	],
 	"file_history":
 	[
+		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/index.html",
+		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/js/script.js",
+		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/css/style.css",
+		"/C/Users/Miguel Andrés/Desktop/TicTacToe/main.js",
+		"/C/Users/Miguel Andrés/Desktop/TicTacToe/tic-tac-toe.html",
+		"/C/Users/Miguel Andrés/Desktop/TicTacToe/main.css",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra.java",
+		"/C/TallerMVC/TallerMVC/PaintView.cs",
+		"/C/TallerMVC/TallerMVC/Galeria.cs",
+		"/C/TallerMVC/TallerMVC/MainActivity.cs",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/NodoAstar.java",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra1.java",
+		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Deap.java",
+		"/C/Users/Miguel Andrés/Desktop/AAC - Miguel Contreras, C.I. 24401758/Modelos en Scilab/CONSTANTES REQUERIDAS PARA SIMULAR.txt",
+		"/D/Programación/C y C++/MetodosNumericos_StefanyGafanho/MetodosNumericos_StefanyGafanho/main.cpp",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
+		"/D/Documentos/2016-3/Arquitectura Avanzada del Computador/Software Tanque de Agua/Tanque/Tanque.c",
+		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus/principalmenu.blade.php",
+		"/G/TiendaUniformes/routes/web.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Tienda/create.blade.php",
+		"/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts/Administrador.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus/adminmenu.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/DatabaseSeeder.php",
+		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaFacturasSeeder.php",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/Modelo.cs",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/MainActivity.cs",
 		"/D/Programación/C y C++/gauss-seidel/main.cpp",
 		"/D/Programación/C y C++/gauss-seidel/GaussSeidel.cpp",
 		"/D/Programación/C y C++/gauss-seidel/Matriz.cpp",
 		"/D/Programación/C y C++/gauss-seidel/GaussSeidel.h",
 		"/D/Programación/C y C++/gauss-seidel/Matriz.h",
 		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Procesos/ControladorOcurrencias/ControladorEstadoPartido.cs",
-		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/Modelo.cs",
 		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/TicTacToe.cs",
 		"/D/Programación/Xamarin/Computación Móvil (2016-12-02)/EjemploXamarin/EjemploXamarin/MainActivity.cs",
 		"/D/Programación/C#/ClaseBaseDatos-01042016/FormaVerAsistencia.cs",
@@ -724,23 +767,15 @@
 		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/IniciarPartido.axml",
 		"/C/Users/Miguel Andrés/Desktop/DelegadoDeCampo/DelegadoDeCampo/Resources/layout/Minutero.axml",
 		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/PruebaRejilla/dist/README.TXT",
-		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra.java",
-		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Astra1.java",
-		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/NodoAstar.java",
-		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Deap.java",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/report.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/EnvioEntregadoController.php",
-		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/index.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioController.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/EnvioEntregado/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
 		"/D/Programación/Laravel/TiendaUniformes/public/js/bootstrap.min.js",
 		"/D/Programación/Laravel/TiendaUniformes/public/css/bootstrap.css",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/route.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Usuario/index.blade.php",
@@ -763,10 +798,8 @@
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaSolicitudesEnvioSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaDireccionesSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Factura.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/seeds/DatabaseSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaProductosSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/TipoProducto.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaFacturasSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaTipoProductosSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaConductoresSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/BaseDeDatos.sql",
@@ -780,7 +813,6 @@
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_021144_drop_envios_perdidos_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_02_10_122018_create_privilegio_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts/Administrador.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/public/index.php",
 		"/D/Programación/Laravel/TiendaUniformes/.env",
 		"/C/Users/Miguel Andrés/Desktop/Program.exe",
@@ -810,25 +842,7 @@
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
 		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/keymaps/Default (Windows).sublime-keymap",
-		"/D/Programación/Laravel/TiendaUniformes/.gitignore",
-		"/D/Programación/Laravel/TiendaUniformes/terminal.glue",
-		"/D/Programación/C y C++/Tanque/Controlador.c",
-		"/D/Programación/C y C++/Tanque/Tanque.c",
-		"/C/Users/Miguel Andrés/AppData/Local/Temp/Temp1_br3ttb-Arduino-PID-Library-v1.1.1-2-gfb095d8.zip/br3ttb-Arduino-PID-Library-fb095d8/README.txt",
-		"/D/Programación/C y C++/Tanque/main.h",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Matrix.cpp",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Node.h",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Multiplication.cpp",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Multiplication.h",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Input.h",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Master.h",
-		"/D/Programación/C y C++/Parallel Matrix Multiplication/MPI/Smart Version/ParallelMatrixMultiplication/src/Parallel.cpp",
-		"/D/Programación/C y C++/lista_de_personas/main.cpp",
-		"/D/Programación/C y C++/tabla-hash/main.cpp",
-		"/D/Programación/C y C++/tabla-hash/X.h",
-		"/D/Programación/C y C++/tabla-hash/X.cpp",
-		"/D/Programación/C y C++/tabla-hash/TablaHash.h"
+		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/keymaps/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
@@ -847,6 +861,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"win",
+			"1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0",
+			"1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 ",
+			"reduce",
 			"<date",
 			"foreach",
 			"solicitudEnvioEntregada",
@@ -970,11 +988,7 @@
 			"TextDrawCreate",
 			"HeadShot[",
 			"new HeadShot",
-			"Barra\\[",
-			"Barra[",
-			"Barra",
-			"new Barra",
-			"actualizarDerby"
+			"Barra\\["
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1038,8 +1052,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

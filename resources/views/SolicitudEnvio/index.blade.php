@@ -3,6 +3,11 @@
 @section('content')
 <div class="col-xs-12 text-center">
   <h3><b>SOLICITUDES DE ENVÍO PENDIENTES</b></h3>
+  <div class="row col-md-offset-4 col-md-4 text-center">
+    <form action="/solicitudes-envio/create" method="GET">
+      <button type="submit" class="btn btn-block btn-success">Crear</button>
+    </form>    
+  </div>
   @if (count($solicitudesEnvio) > 0)
   <table class="table">
     <thead>

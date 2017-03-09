@@ -91,9 +91,9 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 			 <!--body wrapper end-->
 
         <!--footer section start-->
-			<footer>
+			<!--<footer>
 			   <p>Universidad de Oriente</p>
-			</footer>
+			</footer>-->
         <!--footer section end-->
 
       <!-- main content end-->

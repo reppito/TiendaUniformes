@@ -13,14 +13,19 @@
       <th class="text-center">NRO.</th>
       <th class="text-center">CONDUCTOR</th>
       <th class="text-center">VEHICULO</th>
-      <th class="text-center">CARGA</th>
+      <th class="text-center"></th>
     </thead>
 		@foreach ($rutasTransporte as $rutaTransporte)
 		<tbody>
 			<td>{{ $rutaTransporte['id'] }}</td>
 			<td>{{ $rutaTransporte['conductor'] }}</td>
 			<td>{{ $rutaTransporte['vehiculo'] }}</td>
-			<td>{{ $rutaTransporte['carga'] }}</td>  	
+			<td>
+        <form action="/unidades-transporte/{{ $rutaTransporte['idUnidadTransporte'] }}/show" method="GET">
+          {{csrf_field()}}
+          <button type="submit" class="btn btn-success btn-block">Ver</button>
+        </form>
+      </td>  	
 		</tbody>
 		@endforeach
 		</table>	  

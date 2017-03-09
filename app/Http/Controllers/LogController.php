@@ -7,6 +7,7 @@ use TiendaUniformes\Http\Requests\LogRequest;
 use Auth;
 use Session;
 use Redirect;
+use \TiendaUniformes\Privilegios;
 
 class LogController extends Controller
 {
@@ -44,9 +45,15 @@ class LogController extends Controller
      */
     public function store(LogRequest $request)
     {
-        
+        $idPrivilegioEnvio = Privilegios::where('privilegio', 'AdministradorEnvio')->first()->id;
+
         if (Auth::attempt(['email'=> $request['email'],'password'=> $request['contrasena']])) {
-          return Redirect::to('/');
+            if (Auth::user()->id_privilegio == $idPrivilegioEnvio) {
+                return Redirect::to('/solicitudes-envio');
+            }
+            else {
+                return Redirect::to('/');
+            }
         }
         return "datos incorrectos intente de nuevo";
 
