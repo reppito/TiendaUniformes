@@ -45,6 +45,8 @@ Route::post('solicitudes-envio-aceptadas/{idSolicitudEnvio}/report', 'SolicitudE
 Route::post('solicitudes-envio-aceptadas/{idSolicitudEnvio}/report/received', 'SolicitudEnvioAceptadaController@received');
 
 Route::resource('rutas-transporte', 'RutaTransporteController');
+Route::get('rutas-transporte/{idRutaTransporte}/dispatch', 'RutaTransporteController@dispatch');
+Route::get('rutas-transporte/{idRutaTransporte}/receive', 'RutaTransporteController@receive');
 
 Route::resource('envios-entregados', 'EnvioEntregadoController');
 

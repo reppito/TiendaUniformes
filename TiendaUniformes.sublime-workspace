@@ -4,8 +4,100 @@
 		"selected_items":
 		[
 			[
+				"fecha_estimada",
+				"fecha_entrega_estimada"
+			],
+			[
 				"id_soli",
-				"id_solicitud_envio_aceptada"
+				"id_solicitud_envio"
+			],
+			[
+				"id_sol",
+				"id_solicitud_envio"
+			],
+			[
+				"Solici",
+				"SolicitudEnvio"
+			],
+			[
+				"ca",
+				"carga"
+			],
+			[
+				"soli",
+				"solicitudAceptada"
+			],
+			[
+				"ruta",
+				"rutaTransporte"
+			],
+			[
+				"rutas",
+				"rutas-transporte"
+			],
+			[
+				"pp",
+				"productoComprado"
+			],
+			[
+				"Soli",
+				"SolicitudEnvio"
+			],
+			[
+				"id_usu",
+				"id_usuario_solicitante"
+			],
+			[
+				"fecha",
+				"fecha_entrega_estimada"
+			],
+			[
+				"id_",
+				"id_direccion_destino"
+			],
+			[
+				"id_d",
+				"id_direccion_destino"
+			],
+			[
+				"Pr",
+				"ProductoComprado"
+			],
+			[
+				"col-m",
+				"col-md-offset-3"
+			],
+			[
+				"descr",
+				"descripcionProducto"
+			],
+			[
+				"nombre",
+				"nombreComprador"
+			],
+			[
+				"id_prod",
+				"id_producto_comprado"
+			],
+			[
+				"Produ",
+				"Producto"
+			],
+			[
+				"produ",
+				"productoComprado"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"Produc",
+				"ProductoComprado"
+			],
+			[
+				"pri",
+				"privilegioAdminTransporte"
 			],
 			[
 				"nuev",
@@ -14,18 +106,6 @@
 			[
 				"form",
 				"form-control"
-			],
-			[
-				"fecha",
-				"fecha_reporte_entrega"
-			],
-			[
-				"id",
-				"idSolicitudEnvioAceptada"
-			],
-			[
-				"Soli",
-				"SolicitudEnvioAceptada"
 			],
 			[
 				"Solic",
@@ -40,16 +120,8 @@
 				"EnvioRetornado"
 			],
 			[
-				"soli",
-				"solicitudEnvioAceptada"
-			],
-			[
 				"sol",
 				"solicitudEnvioAceptada"
-			],
-			[
-				"Pr",
-				"Producto"
 			],
 			[
 				"conduc",
@@ -58,10 +130,6 @@
 			[
 				"condu",
 				"conductores"
-			],
-			[
-				"id_",
-				"id_solicitud_envio"
 			],
 			[
 				"Envio",
@@ -86,14 +154,6 @@
 			[
 				"id_pro",
 				"id_producto_comprado"
-			],
-			[
-				"Produ",
-				"ProductoComprado"
-			],
-			[
-				"Solici",
-				"SolicitudEnvioAceptada"
 			],
 			[
 				"btn-su",
@@ -316,10 +376,6 @@
 				"id_administrador"
 			],
 			[
-				"id_sol",
-				"id_solicitud"
-			],
-			[
 				"id_usuario",
 				"id_usuario_suscriptor"
 			],
@@ -396,10 +452,6 @@
 				"ControladorInicioSesion"
 			],
 			[
-				"nombre",
-				"nombreUsuario"
-			],
-			[
 				"nomr",
 				"nombreUsuario"
 			],
@@ -428,10 +480,6 @@
 				"LispVal"
 			],
 			[
-				"ca",
-				"calculateAdderValues"
-			],
-			[
 				"groupBy",
 				"groupByMultipliers"
 			]
@@ -439,15 +487,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
-			"settings":
-			{
-				"buffer_size": 378,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -476,10 +515,34 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 334.0,
-		"last_filter": "Git Push",
+		"height": 127.0,
+		"last_filter": "GIt Push",
 		"selected_items":
 		[
+			[
+				"GIt Push",
+				"Git: Push"
+			],
+			[
+				"Git Comm",
+				"Git: Commit"
+			],
+			[
+				"Git Add",
+				"Git: Add All"
+			],
+			[
+				"Git Com",
+				"Git: Commit"
+			],
+			[
+				"GIt Pu",
+				"Git: Push"
+			],
+			[
+				"Git Ad",
+				"Git: Add All"
+			],
 			[
 				"Git Push",
 				"Git: Push"
@@ -489,15 +552,15 @@
 				"Git: Commit"
 			],
 			[
-				"Git AD",
+				"Git Add ",
 				"Git: Add All"
 			],
 			[
-				"Git Comm",
-				"Git: Commit"
+				"Git Pull",
+				"Git: Pull"
 			],
 			[
-				"Git Add",
+				"Git AD",
 				"Git: Add All"
 			],
 			[
@@ -521,14 +584,6 @@
 				"Git: Fetch"
 			],
 			[
-				"Git Com",
-				"Git: Commit"
-			],
-			[
-				"Git Ad",
-				"Git: Add All"
-			],
-			[
 				"Git",
 				"Git: Status"
 			],
@@ -547,10 +602,6 @@
 			[
 				"Git P",
 				"Git: Pull"
-			],
-			[
-				"Git Add ",
-				"Git: Add All"
 			],
 			[
 				"Commit",
@@ -669,7 +720,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 664.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -703,18 +754,52 @@
 		"/D/Programación/Laravel/TiendaUniformes/app",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/Auth",
 		"/D/Programación/Laravel/TiendaUniformes/database",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds",
 		"/D/Programación/Laravel/TiendaUniformes/resources",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Direcciones",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/EnvioEntregado",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/factura",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Proveedores",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Tienda",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/UnidadTransporte",
 		"/D/Programación/Laravel/TiendaUniformes/routes"
 	],
 	"file_history":
 	[
+		"//Xrw755/c/Users/Miriam/CARRERAS.txt",
+		"/C/TallerMVC/TallerMVC/Trazo.cs",
+		"/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
+		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/Modelo.cs",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/route.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/UnidadTransporte/show.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/UnidadTransporteController.php",
+		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/ProveedoresController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/index.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioController.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts/Administrador.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Privilegios.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus/adminmenu.blade.php",
+		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/LogController.php",
+		"/D/Programación/C y C++/recorriendo_matrices/main.cpp",
 		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/index.html",
 		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/js/script.js",
 		"/C/Users/Miguel Andrés/Desktop/tic-tac-toe-gh-pages/css/style.css",
@@ -730,20 +815,12 @@
 		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/astra/src/astra/Deap.java",
 		"/C/Users/Miguel Andrés/Desktop/AAC - Miguel Contreras, C.I. 24401758/Modelos en Scilab/CONSTANTES REQUERIDAS PARA SIMULAR.txt",
 		"/D/Programación/C y C++/MetodosNumericos_StefanyGafanho/MetodosNumericos_StefanyGafanho/main.cpp",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/RutaTransporteController.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioAceptadaController.php",
 		"/D/Documentos/2016-3/Arquitectura Avanzada del Computador/Software Tanque de Agua/Tanque/Tanque.c",
-		"/D/Programación/Laravel/TiendaUniformes/routes/web.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus/principalmenu.blade.php",
 		"/G/TiendaUniformes/routes/web.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/SolicitudEnvioController.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Tienda/create.blade.php",
-		"/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/layouts/Administrador.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/menus/adminmenu.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/DatabaseSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaFacturasSeeder.php",
-		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/Modelo.cs",
 		"/D/Programación/Xamarin/Computación Móvil (2017-02-24)/MovilSQLite/MainActivity.cs",
 		"/D/Programación/C y C++/gauss-seidel/main.cpp",
 		"/D/Programación/C y C++/gauss-seidel/GaussSeidel.cpp",
@@ -769,15 +846,9 @@
 		"/C/Users/Miguel Andrés/Desktop/inteligenciaEdgar/PruebaRejilla/dist/README.TXT",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/report.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/EnvioEntregadoController.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvio/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/EnvioEntregado/index.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/index.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/Conductor/create.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/public/js/bootstrap.min.js",
 		"/D/Programación/Laravel/TiendaUniformes/public/css/bootstrap.css",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/create.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/SolicitudEnvioAceptada/route.blade.php",
-		"/D/Programación/Laravel/TiendaUniformes/resources/views/RutaTransporte/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/Usuario/index.blade.php",
 		"/D/Programación/Laravel/TemaLibre/resources/views/topic/create.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_22_025732_create_rutas_transporte_table.php",
@@ -806,7 +877,6 @@
 		"/D/Programación/Laravel/TiendaUniformes/resources/views/index.blade.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaUsuarioSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php",
-		"/D/Programación/Laravel/TiendaUniformes/app/Privilegios.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/seeds/TablaPrivilegiosSeeder.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/UnidadTransporte.php",
 		"/D/Programación/Laravel/TiendaUniformes/app/Http/Controllers/Controller.php",
@@ -833,20 +903,11 @@
 		"/D/Programación/Laravel/TiendaUniformes/vendor/composer/autoload_classmap.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225104_create_confirmaciones_envio_table.php",
 		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_15_225105_create_envios_perdidos_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225123_create_unidades_transporte_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225138_create_conductores_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224940_create_ordenes_envio_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225043_create_ordenes_envio_canceladas_table.php",
-		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_224815_create_solicitud_envio_rechazada_table.php",
-		"/C/php/php.ini",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
-		"/C/Users/Miguel Andrés/AppData/Roaming/Sublime Text 3/Packages/Glue/keymaps/Default (Windows).sublime-keymap"
+		"/D/Programación/Laravel/TiendaUniformes/database/migrations/2017_02_14_225123_create_unidades_transporte_table.php"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -861,6 +922,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"        \n",
+			"SOLICITUDES ENVIO",
 			"win",
 			"1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0",
 			"1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 \n1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 ",
@@ -986,9 +1049,7 @@
 			"Actualizar(playerid",
 			"TextDrawShowForPlayer",
 			"TextDrawCreate",
-			"HeadShot[",
-			"new HeadShot",
-			"Barra\\["
+			"HeadShot["
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1052,43 +1113,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Miguel Andrés/Desktop/POR HACER.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 378,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1127,7 +1159,7 @@
 	},
 	"output.git":
 	{
-		"height": 94.0
+		"height": 169.0
 	},
 	"output.sftp":
 	{
@@ -1137,7 +1169,7 @@
 	"project": "TiendaUniformes.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

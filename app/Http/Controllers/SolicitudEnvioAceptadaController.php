@@ -51,6 +51,7 @@ class SolicitudEnvioAceptadaController extends Controller
                     , 'descripcion' => $descripcion
                     , 'destinatario' => $destinatario
                     , 'direccion_entrega' => $direccion_entrega
+                    , 'cantidad_productos' => $solicitudEnvioAceptada->cantidad_productos
                     , 'fecha_estimada' => $solicitudEnvio->fecha_entrega_estimada
                     , 'asignada_a_ruta' => RutaTransporte::where('id_solicitud_envio_aceptada', $solicitudEnvioAceptada->id)->count() > 0
                 ];                
@@ -73,7 +74,14 @@ class SolicitudEnvioAceptadaController extends Controller
                       'id' => $rutaTransporte->id
                     , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
                     , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
-                    , 'carga' => SolicitudEnvioAceptada::where('id', $rutaTransporte->id_solicitud_envio_aceptada)
+                    , 'carga' => RutaTransporte::all()
+                        ->where('id_unidad_transporte', $vehiculo->id)
+                        ->filter(function($rutaTransporte, $key) {
+                            return $rutaTransporte->noCompletada();
+                        })
+                        ->map(function($rutaTransporte, $key) {
+                            return SolicitudEnvioAceptada::find($rutaTransporte->id_solicitud_envio_aceptada);
+                        })
                         ->sum('cantidad_productos')
                 ];
             });
@@ -92,21 +100,40 @@ class SolicitudEnvioAceptadaController extends Controller
         else {
             $rutaTransporte = RutaTransporte::where('id', $request['id_ruta_transporte'])->first();
 
-            $nuevaRuta = new RutaTransporte;
+            $cargaActual = RutaTransporte::all()
+                ->where('id_unidad_transporte', $rutaTransporte->id_unidad_transporte)
+                ->filter(function($rutaTransporte, $key) {
+                    return $rutaTransporte->noCompletada();
+                })
+                ->map(function($rutaTransporte, $key) {
+                    return SolicitudEnvioAceptada::find($rutaTransporte->id_solicitud_envio_aceptada);
+                })
+                ->sum('cantidad_productos');
 
-            $nuevaRuta->id_conductor = $rutaTransporte->id_conductor;
-            $nuevaRuta->id_unidad_transporte = $rutaTransporte->id_unidad_transporte;
-            $nuevaRuta->id_solicitud_envio_aceptada = $id;
-            $nuevaRuta->id_usuario_creador = Auth::user()->id;
+            $cargaSolicitud = SolicitudEnvioAceptada::find($rutaTransporte->id_solicitud_envio_aceptada)
+                ->cantidad_productos;
 
-            $nuevaRuta->save();
+            if ($cargaActual + $cargaSolicitud > 100) {
+                return 'La carga de la unidad de transporte no puede exceder los cien productos.';
+            }
 
-            $solicitudEnvio = SolicitudEnvio::all()->where('id', SolicitudEnvioAceptada::all()->where('id', $id)->first()->id_solicitud_envio)->first();
+            else {
+                $nuevaRuta = new RutaTransporte;
 
-            $solicitudEnvio->fecha_entrega_estimada = $request['fecha_estimada_entrega'];
-            $solicitudEnvio->save();
+                $nuevaRuta->id_conductor = $rutaTransporte->id_conductor;
+                $nuevaRuta->id_unidad_transporte = $rutaTransporte->id_unidad_transporte;
+                $nuevaRuta->id_solicitud_envio_aceptada = $id;
+                $nuevaRuta->id_usuario_creador = Auth::user()->id;
 
-            return $this->index(); 
+                $nuevaRuta->save();
+
+                $solicitudEnvio = SolicitudEnvio::all()->where('id', SolicitudEnvioAceptada::all()->where('id', $id)->first()->id_solicitud_envio)->first();
+
+                $solicitudEnvio->fecha_entrega_estimada = $request['fecha_estimada_entrega'];
+                $solicitudEnvio->save();
+
+                return $this->index();
+            }
         }
     }
 

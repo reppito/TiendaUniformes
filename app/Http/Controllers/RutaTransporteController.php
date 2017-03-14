@@ -28,9 +28,6 @@ class RutaTransporteController extends Controller
     public function index()
     {
         $rutasTransporte = RutaTransporte::all()
-            ->reject(function ($rutaTransporte, $key) {
-                return !UnidadTransporte::where('id', $rutaTransporte->id_unidad_transporte)->first()->disponible;
-            })
             ->unique('id_unidad_transporte')
             ->map(function ($rutaTransporte, $key) {
                 $conductor = Conductor::where('id', $rutaTransporte->id_conductor)->first();
@@ -40,6 +37,7 @@ class RutaTransporteController extends Controller
                     , 'conductor' => $conductor->nombre . ' ' . $conductor->apellido
                     , 'vehiculo' => $vehiculo->marca . ' ' . $vehiculo->modelo
                     , 'idUnidadTransporte' => $vehiculo->id
+                    , 'disponible' => $vehiculo->disponible
                 ];
             });
 
@@ -139,6 +137,26 @@ class RutaTransporteController extends Controller
             return $this->create();
         }
     }
+
+    public function dispatch($id)
+    {
+        $unidad = UnidadTransporte::find($id);
+        if ($unidad) {
+            $unidad->disponible = false;
+            $unidad->save();
+        }
+        return $this->index();
+    }
+
+    public function receive($id)
+    {
+        $unidad = UnidadTransporte::find($id);
+        if ($unidad) {
+            $unidad->disponible = true;
+            $unidad->save();
+        }
+        return $this->index();
+    }    
 
     /**
      * Display the specified resource.

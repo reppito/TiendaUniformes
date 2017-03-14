@@ -10,6 +10,7 @@
       <th class="text-center">DESCRIPCIÓN</th>
       <th class="text-center">DESTINATARIO</th>
       <th class="text-center">DIRECCIÓN ENTREGA</th>
+      <th class="text-center">CARGA</th>
       <th class="text-center">FECHA ESTIMADA</th>
       <th class="text-center"></th>
     </thead>
@@ -19,6 +20,7 @@
       <td>{{$solicitudEnvioAceptada['descripcion']}}</td>
       <td>{{$solicitudEnvioAceptada['destinatario']}}</td>
       <td>{{$solicitudEnvioAceptada['direccion_entrega']}}</td>
+      <td>{{$solicitudEnvioAceptada['cantidad_productos']}}</td>
       <td>{{$solicitudEnvioAceptada['fecha_estimada']}}</td>
 
       <td>

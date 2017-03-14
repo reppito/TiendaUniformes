@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="col-xs-12 text-center">
-  <h3><b>RUTAS DE TRANSPORTE DISPONIBLES</b></h3>
+  <h3><b>RUTAS DE TRANSPORTE</b></h3>
   <form action="/rutas-transporte/create" method="GET">
     {{csrf_field()}}
     <button id="botonCrearRuta" type="submit" class="btn btn-success">Crear Ruta de Transporte</button>
@@ -13,6 +13,7 @@
       <th class="text-center">NRO.</th>
       <th class="text-center">CONDUCTOR</th>
       <th class="text-center">VEHICULO</th>
+      <th class="text-center"></th>
       <th class="text-center"></th>
     </thead>
 		@foreach ($rutasTransporte as $rutaTransporte)
@@ -25,7 +26,22 @@
           {{csrf_field()}}
           <button type="submit" class="btn btn-success btn-block">Ver</button>
         </form>
-      </td>  	
+      </td>
+      @if ($rutaTransporte['disponible'] == true)
+      <td>
+        <form action="/rutas-transporte/{{ $rutaTransporte['idUnidadTransporte'] }}/dispatch" method="GET">
+          {{csrf_field()}}
+          <button type="submit" class="btn btn-success btn-block">Despachar</button>
+        </form>
+      </td>
+      @else
+      <td>
+        <form action="/rutas-transporte/{{ $rutaTransporte['idUnidadTransporte'] }}/receive" method="GET">
+          {{csrf_field()}}
+          <button type="submit" class="btn btn-success btn-block">Recibir</button>
+        </form>
+      </td>
+      @endif
 		</tbody>
 		@endforeach
 		</table>	  
