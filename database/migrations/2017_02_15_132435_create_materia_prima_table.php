@@ -16,7 +16,7 @@ class CreateMateriaPrimaTable extends Migration
         Schema::create('materia_prima', function (Blueprint $table){
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('descripcion');
+            $table->string('descripcion',20);
             $table->decimal('precio');
             $table->integer('id_prov')->unsigned();
             $table->foreign('id_prov')->references('id')->on('proveedores');

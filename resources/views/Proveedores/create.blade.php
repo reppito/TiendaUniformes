@@ -4,7 +4,7 @@
   {!!Form::open(['route'=>'proveedores.store','method'=>'POST'])!!}
   <div class="form-group">
     <div class=" col-xs-offset-4">
-      {!!Form::label('REGISTRO DE PROVEEDOR',null,['class'=>'.text-left '])!!}
+      {!!Form::label('Registro de Proveedor',null,['class'=>'.text-left '])!!}
     </div>
 
     <br>
@@ -14,7 +14,7 @@
      <br>
      {!!Form::text('telefono',null,['class'=>'form-control','placeholder'=>'Ingrese su telefono'])!!}
      <br>
-    {{ Form::button('Registrar <span class="glyphicon glyphicon-user"></span>',['class'=>"btn btn-primary btn-block", 'type'=>'submit']) }}
+    {{ Form::button('Ingresar Proveedor <span class="glyphicon glyphicon-user"></span>',['class'=>"btn btn-primary btn-block", 'type'=>'submit']) }}
 
   </div>
   {!!Form::close()!!}

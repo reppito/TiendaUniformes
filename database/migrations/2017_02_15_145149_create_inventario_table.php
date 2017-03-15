@@ -15,9 +15,9 @@ class CreateInventarioTable extends Migration
     {
          Schema::create('inventario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
+            $table->increments('id');
             $table->integer('cantidad');
-            $table->integer('id_prov')->unsigned();
-            $table->foreign('id_prov')->references('id')->on('proveedores');
+            $table->string('descripcion');
             $table->integer('id_materia')->unsigned();
             $table->foreign('id_materia')->references('id')->on('materia_prima');
             $table->timestamps();

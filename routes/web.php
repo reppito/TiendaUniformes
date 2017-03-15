@@ -54,5 +54,8 @@ Route::resource('unidades-transporte', 'UnidadTransporteController');
 
 // Rutas de Rafael
 Route::resource('proveedores','ProveedoresController');
+Route::resource('pedido','PedidoController');
+Route::resource('materia_prima','MateriaPrimaController');
+Route::resource('inventario','InventarioController');
 
 ?>
